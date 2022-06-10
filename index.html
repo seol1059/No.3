@@ -22,12 +22,12 @@
 
 * {margin: 0; font-size: 16px;}
 ul, li, ol {list-style: none;}
-body {width: 100%; height: 100%;}
+body {width: 100%; height: 100%; overflow-x: hidden;}
 
 a {color:#fff;}
 
 
-
+@media (min-width:1200px) {
 header {width: 100%; height: 50px; background-color: #000; }
 #slider {width: 100%; height: 95vh; background-color: #818181; margin: 0 auto; position: r;}
 #slider p {font-size: 250px; font-weight: bold; line-height: 82%; text-align: center; 
@@ -38,16 +38,16 @@ header {width: 100%; height: 50px; background-color: #000; }
 .ri {width: 50%; height: 100%; float: right; background-image: url(img/4.jpg); 
     background-size: cover; background-position: center;}
 
-    #list {width: 100%; height: 15vh; background-color: blue; margin: 0 auto; display: flex;}
-    #list ul {width: 1200px; height: 100%; background-color: #666; margin: 0 auto; display: flex;}
-    #list ul li {width: 30%; height: 100%; background-color: #f1f1f1; margin: 0 auto;
+    #list {width: 100%; height: 15vh;  margin: 0 auto; display: flex;}
+    #list ul {width: 1200px; height: 100%;  margin: 0 auto; display: flex;}
+    #list ul li {width: 30%; height: 100%;  margin: 0 auto;
         display: flex; justify-content: center;}
     #list ul li a { width: 100%; height: 100%;
         color: #000; display: flex; flex-direction: row;
     align-items: center;}
-    #list ul li a img {width: 100%; height: 80%;}
+    #list ul li a img {width: 100%; height: 90%;}
 
-    #clip {width: 100%; height: 500px; margin: 0 auto; background-color: #000; display: flex;
+    #clip {width: 100%; height: 350px; margin: 0 auto; display: flex;
   align-items: center;}
 .banner_wraper { height: 300px; width: 100%; margin: 0 auto; position: absolute;
   overflow: hidden; display: flex; }
@@ -76,13 +76,15 @@ background-size: cover; background-position: center;}
     justify-content: center; align-items: center; }
 .ck p:nth-of-type(2) {font-size: 14px; font-weight: bold; font-style: italic; text-align: center;}
 
-#icon {width: 100%; height: 150px; background-color: tomato; margin: 0 auto; display: flex;}
+#icon {width: 100%; height: 150px;  margin: 0 auto; display: flex; background-color: antiquewhite;}
 #icon ul {width: 1200px; height: 100%; display: flex; margin: 0 auto;}
-#icon ul li {width: 15%; height: 100%; background-color: #666; margin: 0 auto; display: flex;}
+#icon ul li {width: 15%; height: 100%;  margin: 0 auto; display: flex;}
+#icon ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
+    align-items: center;}
 
-.avatar { width: 100%;  height: 100%; vertical-align: middle; border-radius: 50%; }
+.avatar { width: 90%;  height: 90%; vertical-align: middle; border-radius: 50%; display: flex;}
 
-#bioox {width: 100%; height: 200px; margin: 0 auto; background-color: aqua;}
+#bioox {width: 100%; height: 200px; margin: 0 auto; }
 .boox {width: 1200px; height: 100%; margin: 0 auto; background-color: teal;}
 
 .bxle {width: 50%; height: 100%; margin: 0 auto; float: left; background-color: #666; }
@@ -105,11 +107,11 @@ background-size: cover; background-position: center;}
 #full iframe {width: 100%; height: 100%; margin: 0 auto;}
 
 
-#wo {width: 1200px; height: 80px; margin: 0 auto; background-color: tan; display: flex;
+#wo {width: 1200px; height: 80px; margin: 0 auto; display: flex;
     flex-direction: row; justify-content: center; align-items: center;}
 #wo p { font-size: 24px; color: #000; display: flex;}
 
-#so {width: 1200px; height: 350px; margin: 0 auto; background-color: chartreuse; display: flex;}
+#so {width: 1200px; height: 350px; margin: 0 auto;  display: flex;}
 
 .s1 {width: 30%; height: 100%; margin: 0 auto; background-color: steelblue;}
 
@@ -138,12 +140,48 @@ background-size: cover; background-position: center;}
 .o9 {width: 70%; height: 50%; float: right;}
 .o9 p {text-align: center; font-size: 20px;}
 
+
+#labox {width: 100%; height: 200px; margin: 0 auto; background-color: antiquewhite; display: flex;}
+#labox ul {width: 1200px; height: 100%; margin: 0 auto; display: flex;}
+#labox ul li {width: 15%; height: 100%;  display: flex; margin: auto;}
+#labox ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
+    align-items: center;}
+#labox ul li img {width: 100%; height: 90%; margin: 0 auto;  vertical-align: middle;
+    border-radius: 50%; display: flex; }
+
    
 
 
+footer {width: 100%; height: 600px; margin: 0 auto; }
+
+#ft {width: 1200px; height: 400px; margin: 0 auto; display: flex;}
+
+.er1 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+.er2 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+.er3 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+.er4 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+
+#lb {width: 1200px; height: 200px; margin: 0 auto; }
+#lb p {width: 100%; height: 30%; margin: 0 auto; color: #000; text-align: center;}
+
+#lb ul:nth-of-type(1) {width: 35%; height: 55%; margin: 0 auto; display: flex;
+    background-color: violet;}
+#lb ul:nth-of-type(1) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato;
+    display: flex;}
+#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;
+    display: flex;}
+#lb ul:nth-of-type(1) li a img {width: 100%; height: 100%; margin: 0 auto; display: flex; }
+
+#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex; background-color: violet;}
+#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;}
+#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;}
+#lb ul:nth-of-type(2) li a img {width: 100%; height: 100%; margin: 0 auto; }
+}
 
 
-footer {width: 100%; height: 300px; margin: 0 auto; background-color: aquamarine;}
+
+
+
 
 @media (max-width:599px) {
 
@@ -500,12 +538,50 @@ document.getElementById("myNav").style.width = "0%";
 </div>
 
 
+<div id="labox">
+   <ul>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+   </ul>
 
+</div>
 
 
 
 
 <footer>
+
+    <div id="ft">
+        <div class="er1"></div>
+        <div class="er2"></div>
+        <div class="er3"></div>
+        <div class="er4"></div>
+    </div>
+
+    <div id="lb">
+
+    <p>test</p>
+        <ul>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>  
+        </ul>
+
+        <ul>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+        </ul>
+
+
+    </div>
 
 </footer>
 </body>
