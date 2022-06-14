@@ -23,13 +23,14 @@
 * {margin: 0; font-size: 16px;}
 ul, li, ol {list-style: none;}
 body {width: 100%; height: 100%; overflow-x: hidden;}
-
-a {color:#fff;}
-
+a {color: #fff;}
 
 
 
 
+
+
+/* 
 @media (max-width:599px) {
 
 
@@ -125,7 +126,7 @@ background-size: cover; background-position: center;}
 .ck p {height: 100%; width: 100%; font-size: 24px; font-weight: bold; font-style: italic;
     text-align: center; display: flex; flex-direction: row;
     justify-content: center; align-items: center; }
-.ck p:nth-of-type(2) {font-size: 14px; font-weight: bold; font-style: italic; text-align: center;}
+
 
 #icon {width: 100%; height: 150px;  margin: 0 auto; display: flex; background-color: antiquewhite;}
 #icon ul {width: 1200px; height: 100%; display: flex; margin: 0 auto;}
@@ -133,7 +134,7 @@ background-size: cover; background-position: center;}
 #icon ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center;}
 
-.avatar { width: 90%;  height: 90%; vertical-align: middle; border-radius: 50%; display: flex;}
+.avatar { width: 90%;  height: 80%; vertical-align: middle; border-radius: 50%; display: flex;}
 
 #bioox {width: 100%; height: 200px; margin: 0 auto; }
 .boox {width: 100%; height: 100%; margin: 0 auto; background-color: teal;}
@@ -197,7 +198,7 @@ background-size: cover; background-position: center;}
 #labox ul li {width: 15%; height: 100%;  display: flex; margin: auto;}
 #labox ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center;}
-#labox ul li img {width: 100%; height: 90%; margin: 0 auto;  vertical-align: middle;
+#labox ul li img {width: 100%; height: 70%; margin: 0 auto;  vertical-align: middle;
     border-radius: 50%; display: flex; }
 
    
@@ -207,32 +208,32 @@ footer {width: 100%; height: auto; margin: 0 auto; }
 
 #ft {width: 100%; height: 400px; margin: 0 auto; display: flex;}
 
-.er1 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er2 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er3 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er4 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+.er1 {width: 20%; height: 100%; margin: 0 auto;  display: flex;}
+.er2 {width: 20%; height: 100%; margin: 0 auto; display: flex;}
+.er3 {width: 20%; height: 100%; margin: 0 auto;  display: flex;}
+.er4 {width: 20%; height: 100%; margin: 0 auto; display: flex;}
 
 #lb {width: 100%; height: 200px; margin: 0 auto; }
 #lb p {width: 100%; height: 30%; margin: 0 auto; color: #000; text-align: center;}
 
 #lb ul:nth-of-type(1) {width: 35%; height: 55%; margin: 0 auto; display: flex;
-    background-color: violet;}
-#lb ul:nth-of-type(1) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato;
+  }
+#lb ul:nth-of-type(1) li {width: 20%; height: 100%; margin: 0 auto; 
     display: flex;}
-#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;
+#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto;
     display: flex;}
 #lb ul:nth-of-type(1) li a img {width: 100%; height: 100%; margin: 0 auto; display: flex; }
 
-#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex; background-color: violet;}
-#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;}
-#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;}
+#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex;}
+#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto; display: flex;}
+#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; }
 #lb ul:nth-of-type(2) li a img {width: 100%; height: 100%; margin: 0 auto; }
 
 
 
 
 
-}
+} */
 
 
 
@@ -241,13 +242,24 @@ footer {width: 100%; height: auto; margin: 0 auto; }
 
 @media (min-width:1200px) {
 header {width: 100%; height: 50px; background-color: #000; }
+header .small{width: 100%; display: flex; align-items: center; justify-content:space-around;}
+header a{padding: 15px; text-decoration: none;}
+header a:hover {background-color: #eee; color:#666;}
+
+.logo {width: 80px; line-height: 50px; background-color: #000; color:#fff; text-align: center;}
+#b {display: none;}
+#a {display:block;}
+#myNav {display: none;}
+.logo {width: 120px; line-height: 50px; background-color: #000; color: #fff; text-align: center;
+    font-weight: bold; font-style: italic;}
+   
 #slider {width: 100%; height: 95vh; background-color: #818181; margin: 0 auto; position: r;}
 #slider p {font-size: 1500%; font-weight: bold; line-height: 82%; text-align: center; 
     background-image: url(img/2.jpg); background-size: cover; background-position: 50%;
     background-attachment: fixed; -webkit-text-fill-color: rgb(255 0 0 / 0%);
     -webkit-background-clip: text; position: absolute; top: 30%; }
 
-.le {width: 50%; height: 100%; background-color: #818181; float: left;}
+.le {width: 50%; height: 100%; background-color: #818181; float: left; color: #fff;}
 
 .ri {width: 50%; height: 100%; float: right; background-image: url(img/4.jpg); 
     background-size: cover; background-position: center;}
@@ -284,11 +296,10 @@ background-size: cover; background-position: center;}
 
 
 .ba {width: 100%; height: 100%; margin: 0 auto; background-color: #eee; opacity: 0.9;}
-.ck {width: 100%; height: 100%; margin: auto; display: flex;}
-.ck p {height: 100%; width: 100%; font-size: 24px; font-weight: bold; font-style: italic;
-    text-align: center; display: flex; flex-direction: row;
-    justify-content: center; align-items: center; }
-.ck p:nth-of-type(2) {font-size: 14px; font-weight: bold; font-style: italic; text-align: center;}
+.ck {width: 100%; height: 100%; margin: auto; display: flex; flex-direction: column; justify-content: center;} 
+.ck p {font-size: 22px; text-align: center; font-style: italic;  }
+.ck b {font-size: 30px;}
+/* .ck p:nth-of-type(2) {font-size: 14px; font-weight: bold; font-style: italic; text-align: center;} */
 
 #icon {width: 100%; height: 150px;  margin: 0 auto; display: flex; background-color: antiquewhite;}
 #icon ul {width: 1200px; height: 100%; display: flex; margin: 0 auto;}
@@ -306,15 +317,18 @@ background-size: cover; background-position: center;}
     display: flex; align-items: center;}
 .le1 img {width: 90%; height: 90%; margin: 0 auto; display: flex ;}
 .le2 {width: 35%; height: 100%; margin: auto; float: right; background-color: yellow;
-    display: flex;}
+    display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .le2 p {text-align: center; align-items: center; font-size: 24px; display: flex;}
+.le2 p:nth-of-type(2) {font-size: 18px;}
+
 .bxri {width: 50%; height: 100%; margin: 0 auto; float: right; background-color: antiquewhite;}
 .ri1 {width: 65%; height: 100%; margin: auto; float: left; background-color: red;
     display: flex; align-items: center;}
 .ri1 img {width: 90%; height: 90%; margin: 0 auto; display: flex ;}
 .ri2 {width: 35%; height: 100%; margin: auto; float: right; background-color: yellow;
-    display: flex;}
+    display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .ri2 p {text-align: center; align-items: center; font-size: 24px; display: flex;}
+.ri2 p:nth-of-type(2) {font-size: 18px;}
      
     
 #full {width: 1200px; height: 500px; margin: 0 auto; background-color: sandybrown; }
@@ -331,28 +345,40 @@ background-size: cover; background-position: center;}
 
 .o1 {width: 100%; height: 50%; margin: 0 auto;}
 .o1 img {width: 100%; height: 100%;}
-.o2 {width: 30%; height: 50%; float: left;}
+.o2 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
+    justify-content: space-evenly;}
 .o2 p {text-align: center; font-size: 20px;}
-.o3 {width: 70%; height: 50%; float: right;}
-.o3 p {text-align: center; font-size: 20px;}
+.o3 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+    justify-content: center; font-style: italic;}
+.o3 a {color: #fff;}
+.o3 p {text-align: center; font-size: 20px; font-style: italic;}
 
 .s2 {width: 30%; height: 100%; margin: 0 auto; background-color: steelblue;}
 
 .o4 {width: 100%; height: 50%; margin: 0 auto;}
 .o4 img {width: 100%; height: 100%;}
-.o5 {width: 30%; height: 50%; float: left;}
-.o5 p {text-align: center; font-size: 20px;}
-.o6 {width: 70%; height: 50%; float: right;}
-.o6 p {text-align: center; font-size: 20px;}
+.o5 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
+    justify-content: space-evenly; font-style: italic;}
+.o5 p {text-align: center; font-size: 20px; font-style: italic;}
+.o6 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+    justify-content: center;}
+    .o6 a {color: #fff;}
+.o6 p {text-align: center; font-size: 20px; display: flex; flex-direction: column;
+    justify-content: center; font-style: italic;}
 
 .s3 {width: 30%; height: 100%; margin: 0 auto; background-color: steelblue;}
 
 .o7 {width: 100%; height: 50%; margin: 0 auto;}
 .o7 img {width: 100%; height: 100%;}
-.o8 {width: 30%; height: 50%; float: left;}
-.o8 p {text-align: center; font-size: 20px;}
-.o9 {width: 70%; height: 50%; float: right;}
-.o9 p {text-align: center; font-size: 20px;}
+.o8 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
+    justify-content: space-evenly; font-style: italic;}
+.o8 p {text-align: center; font-size: 20px; display: flex; flex-direction: column;
+    justify-content: space-evenly; font-style: italic;}
+.o9 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+    justify-content: center;}
+    .o9 a {color: #fff;}
+.o9 p {text-align: center; font-size: 20px; display: flex; flex-direction: column;
+    justify-content: center; font-style: italic;}
 
 
 #labox {width: 100%; height: 200px; margin: 0 auto; background-color: antiquewhite; display: flex;}
@@ -366,30 +392,52 @@ background-size: cover; background-position: center;}
    
 
 
-footer {width: 100%; height: auto; margin: 0 auto; }
+footer {width: 100%; height: auto; margin: 0 auto;  }
 
-#ft {width: 1200px; height: 400px; margin: 0 auto; display: flex;}
+#ft {width: 1200px; height: 450px; margin: 0 auto; background-color: rgb(46, 46, 46); display: flex;}
 
-.er1 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er2 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er3 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
-.er4 {width: 20%; height: 100%; margin: 0 auto; background-color: blue; display: flex;}
+.er1 {width: 20%; height: 100%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+.er1 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er1 p {font-size: 14px; color: #818181;}
+
+.er2 {width: 20%; height: 100%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er2 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er2 p {font-size: 14px; color: #818181;}
+
+.er3 {width: 20%; height: 100%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er3 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er3 p {font-size: 14px; color: #818181;}
+
+.er4 {width: 20%; height: 100%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er4 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er4 p {font-size: 14px; color: #818181;}
+
+#input1 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none; border-bottom: 3px solid black; }
+#input2 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none; border-bottom: 3px solid black;}
+#input3 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none; border-bottom: 3px solid black; }
+#input4 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none; border-bottom: 3px solid black;}
 
 #lb {width: 1200px; height: 200px; margin: 0 auto; }
-#lb p {width: 100%; height: 30%; margin: 0 auto; color: #000; text-align: center;}
+#lb p {width: 100%; height: 55%; margin: 0 auto; color: #000; display: flex; flex-direction: row;
+    justify-content: center; align-items: center; font-weight: bold; font-style: italic; font-size: 24px;}
 
-#lb ul:nth-of-type(1) {width: 35%; height: 55%; margin: 0 auto; display: flex;
-    background-color: violet;}
-#lb ul:nth-of-type(1) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato;
+#lb ul:nth-of-type(1) {width: 35%; height: 15%; margin: 0 auto; display: flex;
+    }
+#lb ul:nth-of-type(1) li {width: 25%; height: 100%; margin: 0 auto;
     display: flex;}
-#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;
-    display: flex;}
-#lb ul:nth-of-type(1) li a img {width: 100%; height: 100%; margin: 0 auto; display: flex; }
+#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto; 
+    display: flex; }
+#lb ul:nth-of-type(1) li a img {width: 30%; height: 100%; margin: 0 auto; display: flex; }
 
-#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex; background-color: violet;}
-#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;}
-#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; background-color: #666;}
-#lb ul:nth-of-type(2) li a img {width: 100%; height: 100%; margin: 0 auto; }
+#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex;}
+#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto;
+    display: flex;}
+#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; }
+#lb ul:nth-of-type(2) li a img {width: 100%; height: 80%; margin: 0 auto; }
 }
 
 
@@ -492,7 +540,7 @@ document.getElementById("myNav").style.width = "0%";
 
 <div class="small">
 
-<div class="logo">logo</div>
+<div class="logo">Blue ㅁ STuDio</div>
 
 
 
@@ -563,16 +611,16 @@ document.getElementById("myNav").style.width = "0%";
 <!-- 클립 슬라이드 -->
 <div id="clip">
     <div class="banner_wraper">
-      <a href="#"><img src="img/0.jpg"></a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/2.jpg"> </a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/8.jpg"></a>
-      <a href="#"><img src="img/2.jpg"></a>
-      <a href="#"><img src="img/1.jpg"></a>
+      <a href="#"><img src="img/40.jpg"></a>
+      <a href="#"><img src="img/41.jpg"></a>
+      <a href="#"><img src="img/42.jpg"></a>
+      <a href="#"><img src="img/43.jpg"></a>
+      <a href="#"><img src="img/44.jpg"></a>
+      <a href="#"><img src="img/45.jpg"> </a>
+      <a href="#"><img src="img/46.jpg"></a>
+      <a href="#"><img src="img/47.jpg"></a>
+      <a href="#"><img src="img/48.jpg"></a>
+      <a href="#"><img src="img/49.jpg"></a>
     </div>
     </div>
 
@@ -589,20 +637,20 @@ document.getElementById("myNav").style.width = "0%";
 <div id="ka">
     <div class="ba">
         <div class="ck">
-            <p>그래픽 아트 워크<br>
-                더 현대<br>
-                2022.06.08.(수) ~ 2022.07.15.(금)</p>
+            <p>GRAPHIC ARTWORK<p>
+            <p>THE <b>HYUNDAI</b> SEOUL</p>
+            <p> 2022.06.08.(수) ~ 2022.07.15.(금)</p>
         </div>
     </div>
 </div>
 
 <div id="icon">
     <ul>
-        <li><a href="#"><img src="img/0.jpg" alt="" alt="Avatar" class="avatar"></a></li>
-        <li><a href="#"><img src="img/0.jpg" alt="" alt="Avatar" class="avatar"></a></li>
-        <li><a href="#"><img src="img/0.jpg" alt="" alt="Avatar" class="avatar"></a></li>
-        <li><a href="#"><img src="img/0.jpg" alt="" alt="Avatar" class="avatar"></a></li>
-        <li><a href="#"><img src="img/0.jpg" alt="" alt="Avatar" class="avatar"></a></li>
+        <li><a href="#"><img src="img/7.jpg" alt="" alt="Avatar" class="avatar"></a></li>
+        <li><a href="#"><img src="img/29.jpg" alt="" alt="Avatar" class="avatar"></a></li>
+        <li><a href="#"><img src="img/30.jpg" alt="" alt="Avatar" class="avatar"></a></li>
+        <li><a href="#"><img src="img/31.jpg" alt="" alt="Avatar" class="avatar"></a></li>
+        <li><a href="#"><img src="img/32.jpg" alt="" alt="Avatar" class="avatar"></a></li>
 
     </ul>
 </div>
@@ -614,15 +662,17 @@ document.getElementById("myNav").style.width = "0%";
                 <img src="img/13.jpg" alt="">
             </div>
             <div class="le2">
-                <p>text</p>
+                <p>WINSOME<br></p>
+                <p>ATTRACTIVE</p>
             </div>
         </div>
         <div class="bxri">
             <div class="ri1">
-                <img src="img/13.jpg" alt="">
+                <img src="img/14.jpg" alt="">
             </div>
             <div class="ri2">
-                <p>text</p>
+                <p>ADORABLE<br></p>
+                <p>AFFECTION</p>
             </div>
         </div>
     </div>
@@ -634,23 +684,23 @@ document.getElementById("myNav").style.width = "0%";
 </div>
 
 <div id="wo">
-    <p>test</p>
+    <p>FROM THE BLOG</p>
 </div>
 
 <div id="so">
     <div class="s1">
 
         <div class="o1">
-            <img src="" alt="">
+            <img src="img/25.jpg" alt="">
         </div>
         <div class="o2">
-            <p>01</p>
-            <p>test</p>
+            <p><i>No.</i></p>
+            <p><i>01</i></p>
         </div>
         <div class="o3">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <p>2022.04.28~2022.06.25</p>
+            <p>하우스 서울</p><br>
+            <p><a>Reserve >></a></p>
         </div>
 
     </div>
@@ -658,31 +708,31 @@ document.getElementById("myNav").style.width = "0%";
     <div class="s2">
 
         <div class="o4">
-            <img src="" alt="">
+            <img src="img/26.jpg" alt="">
         </div>
         <div class="o5">
-            <p>02</p>
-            <p>test</p>
+            <p><i>No.</i></p>
+            <p><i>02</i></p>
         </div>
         <div class="o6">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <p>2022.06.10 ~ 2022.09.12</p>
+            <p>리안갤러리 서울</p><br>
+            <p><a>Reserve >></a></p>
         </div>
     </div>
 
     <div class="s3">
         <div class="o7">
-            <img src="" alt="">
+            <img src="img/27.jpg" alt="">
         </div>
         <div class="o8">
-            <p>03</p>
-            <p>test</p>
+            <p><i>No.</i></p>
+            <p><i>03</i></p>
         </div>
         <div class="o9">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <p>2022.05.28 ~ 2022.06.27</p>
+            <p>국립현대미술관 서울</p><br>
+            <p><a>Reserve >></a></p>
         </div>
 
     </div>
@@ -692,12 +742,12 @@ document.getElementById("myNav").style.width = "0%";
 
 <div id="labox">
    <ul>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-       <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon1.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon2.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon3.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon4.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon5.jpg" alt=""></a></li>
+       <li><a href="#"><img src="img/icon6.jpg" alt=""></a></li>
    </ul>
 
 </div>
@@ -708,28 +758,73 @@ document.getElementById("myNav").style.width = "0%";
 <footer>
 
     <div id="ft">
-        <div class="er1"></div>
-        <div class="er2"></div>
-        <div class="er3"></div>
-        <div class="er4"></div>
+        <div class="er1">
+            <br>
+            <p><b>INFORMATION</b></p><br>
+
+            <p>주소</p><br>
+            <p>번호 : 02 - 123 - 456</p><br>
+            <p>팩스 : 02 . 3446 . 0000</p><br>
+            <p>카카오톡 ID : Blue_Moon_STuDio</p><br>
+            <p>Blue_Moon_STuDio@naver.com</p>
+        </div>
+        <div class="er2">
+            <br>
+            <p><b>PROCESS</b></p><br>
+
+            <p>근무시간 : <br>월 ~ 금 AM 9 : 00 ~ PM 7 : 00</p><br>
+            <p>점심시간 : <br>PM 12 : 00 ~ PM 1 : 00</p><br>
+            <p>고객센터 : <br>AM 10 : 00 ~ PM 6 : 00</p><br>
+            <p></p><br>
+            <p style="color: rgb(207, 207, 207);"><b>Blue ㅁ STuDio 입금 계좌번호<br>
+                (예금주 : 이 설)</b></p><br>
+            <p>국민은행 : 464801 - 01 - 061719</p><br>
+            <p>우리은행 : 1002 - 032 - 538269</p><br>
+            <p>농협 : 084 - 12 - 135951</p><br>
+        </div>
+        <div class="er3">
+            <br>
+            <p><b>회사정보</b></p><br>
+
+            <p>상호 : Blue ㅁ STuDio</p><br>
+            <p>대표 : 이 설</p><br>
+            <p>사업자 등록번호 : 211-06-76999</p><br>
+            <p>책임자 : 이 설<br>
+                (Blue_Moon_STuDio@naver.com)</p>
+            
+        </div>
+        <div class="er4">
+            <br>
+            <p>회사소개</p><br>
+            <p>쇼핑가이드</p><br>
+            <p>개인정보보호정책</p><br>
+            <p>이용약관</p><br><br><br><br>
+
+            <form action="form_ok.php" method="POST">
+               <input id="input1" type="text" placeholder="ID">
+               <input id="input2" type="submit" value="Login" >
+
+               <input id="input3" type="text" placeholder="PASSWORD">
+               <input id="input4" type="submit" value="Login">
+            </form>
+
+        </div>
     </div>
 
     <div id="lb">
 
-    <p>test</p>
+    <p>Blue ㅁ STuDio</p>
         <ul>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>  
+            <li><a href="#"><img src="img/i1.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i2.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i3.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i4.png" alt=""></a></li>
         </ul>
 
         <ul>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
-            <li><a href="#"><img src="img/100.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/google.png" alt=""></a></li>
+            <li><a href="#"><img src="img/apple.png" alt=""></a></li>
+         
         </ul>
 
 
