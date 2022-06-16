@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        body , html {width: 100%; height: 100%;}
+
+        a {
+            color: #fff;
+        }
+
+
+        header {width: 100%; height: 50px; background-color: #528bc2; }
+header .small{width: 100%; display: flex; align-items: center; justify-content:space-around;}
+header a{padding: 15px; text-decoration: none;}
+header a:hover {background-color: #eee; color:#666;}
+
+.logo {width: 120px; line-height: 50px; background-color: #528bc2; color: #fff;
+    text-align: center;
+    font-weight: bold; font-style: italic; font-family: 'WooridaumB'; }
+#b {display: none;}
+#a {display:block; font-family: 'WooridaumB'; font-style: italic;}
+#myNav {display: none;}
+
+
+
+#slider {width: 1200px; height: 500px; margin: 0 auto; background-color: #666;}
+.sl {width: 50%; height: 100%; float: left; background-color: antiquewhite; display: flex;
+    flex-direction: column; align-items: center; justify-content: space-evenly;}
+.sl p {font-size: 21px;}
+.sl button {width: 200px; height: 100px; background-color: brown; color: #eee;}
+
+
+#a1 {width: 1200px; height: 300px; margin: 0 auto; background-color: #528bc2;}
+.b1 {width: 100%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;
+    flex-direction: column; align-items: center; justify-content: space-evenly;}
+.b1 p {font-size: 20px;}
+
+
+#go {width: 1200px; height: 500px; margin: 0 auto; background-color: turquoise;}
+.g1 {width: 50%; height: 100%; float: left; background-color: thistle;}
+.g2 {width: 50%; height: 100%; float: right; background-color: darkcyan; display: flex;
+    flex-direction: row; flex-wrap: wrap;}
+.x1 {width: 50%; height: 50%; background-color: antiquewhite; display: flex;
+    flex-direction: column; align-items: center; justify-content: space-evenly;}
+.x2 {width: 50%; height: 50%; background-color: red;}
+.x3 {width: 50%; height: 50%; background-color: green;}
+.x4 {width: 50%; height: 50%; background-color: yellow; display: flex;
+    flex-direction: column; align-items: center; justify-content: space-evenly;}
+
+
+    #ra {width: 1200px; height: 250px; margin: 0 auto; background-color: #528bc2;}
+    .st1 {width: 50%; height: 100%; float: left; background-color: aqua; }
+    .re1 {width: 50%; height: 100%; float: left; background-color: blueviolet; display: flex;
+        flex-direction: column; align-items: center; justify-content: space-evenly;}
+    .re2 {width: 50%; height: 100%; float: right; background-color: cadetblue;}
+    .st2 {width: 50%; height: 100%; float: left; background-color: aqua; }
+
+
+
+
+
+
+
+
+
+
+
+footer {width: 100%; height: auto; margin: 0 auto;  }
+
+#ft {width: 1200px; height: 450px; margin: 0 auto; background-color: rgb(46, 46, 46); display: flex;}
+
+.er1 {width: 20%; height: 100%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+.er1 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er1 p {font-size: 14px; color: #818181;}
+
+.er2 {width: 20%; height: 100%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er2 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er2 p {font-size: 14px; color: #818181;}
+
+.er3 {width: 20%; height: 100%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er3 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er3 p {font-size: 14px; color: #818181;}
+
+.er4 {width: 20%; height: 100%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee;}
+    .er4 p:nth-of-type(1) {font-size: 16px; color: rgb(207, 207, 207);}
+.er4 p {font-size: 14px; color: #818181;}
+
+#input1 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none; 
+    border-bottom: 3px solid black; }
+#input2 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
+     border-bottom: 3px solid black;}
+#input3 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none;
+     border-bottom: 3px solid black; }
+#input4 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
+     border-bottom: 3px solid black;}
+
+#lb {width: 1200px; height: 200px; margin: 0 auto; }
+#lb p {width: 100%; height: 55%; margin: 0 auto; color: #000; font-family: 'WooridaumB';
+    display: flex; flex-direction: row; justify-content: center; align-items: center;
+    font-weight: bold; font-style: italic; font-size: 24px;}
+
+#lb ul:nth-of-type(1) {width: 35%; height: 15%; margin: 0 auto; display: flex;
+    }
+#lb ul:nth-of-type(1) li {width: 25%; height: 100%; margin: 0 auto;
+    display: flex;}
+#lb ul:nth-of-type(1) li a {width: 100%; height: 100%; margin: 0 auto; 
+    display: flex; }
+#lb ul:nth-of-type(1) li a img {width: 30%; height: 100%; margin: 0 auto; display: flex; }
+
+#lb ul:nth-of-type(2) {width: 35%; height: 35%; margin: 0 auto; display: flex;}
+#lb ul:nth-of-type(2) li {width: 20%; height: 100%; margin: 0 auto;
+    display: flex;}
+#lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; }
+#lb ul:nth-of-type(2) li a img {width: 100%; height: 80%; margin: 0 auto; }
+
+
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/index_js.js"></script>
+    <script>
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+
+        <div class="small">
+        
+        <div class="logo">Blue ㅁ STuDio</div>
+        
+        
+        
+        <div id="a">
+        
+        <a href="#">Team</a>
+        
+        <a href="#">Work</a>
+        
+        <a href="#">Price</a>
+        
+        <a href="#">Contact</a>
+        
+        </div>
+        
+        
+        
+        <img src="img/i.png" id="b" alt="img" onclick="openNav()">
+        
+        </div>
+        
+        
+        
+        <div id="myNav" class="overlay">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        
+        <div class="overlay-content">
+        
+        <a href="#">HOME</a>
+        
+        <a href="#">PAGES</a>
+        
+        <a href="#">SERVICES</a>
+        
+        <a href="#">EVENT</a>
+        
+        <a href="#">GALLERY</a>
+        
+        <a href="#">BLOG</a>
+        
+        <a href="#">SHOP</a>
+        
+        </div>
+        
+        
+        
+        </div>
+        
+        
+        
+        </header>
+
+
+    <div id="slider">
+         <div class="sl">
+            <p>test</p>
+            <p>test</p>
+            <button></button>
+         </div>
+    </div>
+
+    <div id="a1">
+        <div class="b1">
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+        </div>
+    </div>
+
+   <div id="go">
+    <div class="g1"></div>
+    <div class="g2">
+        <div class="x1">
+            <p>test</p>
+            <p>test</p>
+            <button>test</button>
+        </div>
+        <div class="x2"></div>
+        <div class="x3"></div>
+        <div class="x4">
+            <p>test</p>
+            <p>test</p>
+            <button>test</button>
+        </div>
+    </div>
+   </div>
+
+   <div id="ra">
+    <div class="st1">
+        <div class="re1">
+            <p>test</p>
+            <p>test</p>
+            <button>test</button>
+        </div>
+        <div class="re2"></div>
+    </div>
+    <div class="st2"></div>
+   </div>
+
+  
+
+
+
+
+
+
+
+
+
+        
+<footer>
+
+    <div id="ft">
+        <div class="er1">
+            <br>
+            <p><b>INFORMATION</b></p><br>
+
+            <p>주소</p><br>
+            <p>번호 : 02 - 123 - 456</p><br>
+            <p>팩스 : 02 . 3446 . 0000</p><br>
+            <p>카카오톡 ID : Blue_Moon_STuDio</p><br>
+            <p>Blue_Moon_STuDio@naver.com</p>
+        </div>
+        <div class="er2">
+            <br>
+            <p><b>PROCESS</b></p><br>
+
+            <p>근무시간 : <br>월 ~ 금 AM 9 : 00 ~ PM 7 : 00</p><br>
+            <p>점심시간 : <br>PM 12 : 00 ~ PM 1 : 00</p><br>
+            <p>고객센터 : <br>AM 10 : 00 ~ PM 6 : 00</p><br>
+            <p></p><br>
+            <p style="color: rgb(207, 207, 207);"><b>Blue ㅁ STuDio 입금 계좌번호<br>
+                (예금주 : 이 설)</b></p><br>
+            <p>국민은행 : 464801 - 01 - 061719</p><br>
+            <p>우리은행 : 1002 - 032 - 538269</p><br>
+            <p>농협 : 084 - 12 - 135951</p><br>
+        </div>
+        <div class="er3">
+            <br>
+            <p><b>회사정보</b></p><br>
+
+            <p>상호 : Blue ㅁ STuDio</p><br>
+            <p>대표 : 이 설</p><br>
+            <p>사업자 등록번호 : 211-06-76999</p><br>
+            <p>책임자 : 이 설<br>
+                (Blue_Moon_STuDio@naver.com)</p>
+            
+        </div>
+        <div class="er4">
+            <br>
+            <p>회사소개</p><br>
+            <p>쇼핑가이드</p><br>
+            <p>개인정보보호정책</p><br>
+            <p>이용약관</p><br><br><br><br>
+
+            <form action="form_ok.php" method="POST">
+               <input id="input1" type="text" placeholder="ID">
+               <input id="input2" type="submit" value="Login" >
+
+               <input id="input3" type="text" placeholder="PASSWORD">
+               <input id="input4" type="submit" value="Login">
+            </form>
+
+        </div>
+    </div>
+
+    <div id="lb">
+
+    <p>Blue ㅁ STuDio</p>
+        <ul>
+            <li><a href="#"><img src="img/i1.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i2.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i3.png" alt=""></a></li>
+            <li><a href="#"><img src="img/i4.png" alt=""></a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#"><img src="img/google.png" alt=""></a></li>
+            <li><a href="#"><img src="img/apple.png" alt=""></a></li>
+         
+        </ul>
+
+
+    </div>
+
+</footer>
+</body>
+
+</html>
