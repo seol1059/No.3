@@ -23,6 +23,9 @@
         }
 
 
+
+
+   
         header {width: 100%; height: 50px; background-color: #528bc2; }
 header .small{width: 100%; display: flex; align-items: center; justify-content:space-around;}
 header a{padding: 15px; text-decoration: none;}
@@ -37,39 +40,184 @@ header a:hover {background-color: #eee; color:#666;}
 
 
 
-#slider {width: 1200px; height: 500px; margin: 0 auto; background-color: #666;}
-.sl {width: 50%; height: 100%; float: left; background-color: antiquewhite; display: flex;
+#slider {width: 1200px; height: 500px; margin: 0 auto; background-image: url('img/200.png');
+ background-position: center; background-size: cover; }
+.sl {width: 50%; height: 100%; float: left;  display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
-.sl p {font-size: 21px;}
-.sl button {width: 200px; height: 100px; background-color: brown; color: #eee;}
+.sl p {font-size: 21px; color: #eee;}
 
 
-#a1 {width: 1200px; height: 300px; margin: 0 auto; background-color: #528bc2;}
+
+#a1 {width: 1200px; height: 300px; margin: 0 auto; background-color: #528bc2;
+    transform: translateX(-500px); transition: all 3s; opacity: 0;}
 .b1 {width: 100%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
 .b1 p {font-size: 20px;}
 
+#cha {width: 1200px; height: 370px; margin: 0 auto; background-color: #5AC05A;}
+.chase {width: 90%; height: 100%; margin: 0 auto; padding: 50px; transform: translateY(100px);
+    transition: all 3s; opacity: 0;}
 
-#go {width: 1200px; height: 500px; margin: 0 auto; background-color: turquoise;}
-.g1 {width: 50%; height: 100%; float: left; background-color: thistle;}
+/* The browser window */
+.container { 
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Container for columns and the top "toolbar" */
+.row { 
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Page content */
+.content {
+  padding: 10px;
+}
+
+
+#ig {width: 100%; height: 400px; margin: 0 auto; background-image: url('img/mu.jpg');
+ background-position: center; background-size: cover; }
+ .igte {width: 1200px; height: 100%; margin: 0 auto; text-align: center; display: flex;
+    flex-direction: column; align-items: center; justify-content: center;}
+ .igte p {text-align: center; color: #fff; font-size: 50px;}
+
+
+#ab {width: 1200px; height: 1000px; margin: 0 auto; background-color: #FDD800;}
+.ab1 {width: 100%; height: 20%; margin: 0 auto; background-color: #f7f7f7; display: flex;  
+    flex-direction: column; align-items: center; justify-content: space-evenly; }
+.ab1 p {color: #000; font-size: 24px; text-align: center; }
+.ab1 span {letter-spacing: -4px;}
+.ab2 {width: 50%; height: 45%; margin: 0 auto; float: left; background-color: #5AC05A; 
+    display: flex;   flex-direction: column; align-items: center; justify-content: space-evenly;
+background-image: url('img/302.png'); background-position: center; background-size: cover;}
+    .ab2 p {color: #000; font-size: 24px; }
+.ab3 {width: 50%; height: 45%; margin: 0 auto; float: right;  display: flex;  
+    flex-direction: column; align-items: center; justify-content: space-evenly; background: #aea9a5; }
+
+  canvas {
+  position: absolute;
+  touch-action: none;
+  top: 0;
+  left: 0;
+}
+    .ab3 p {color: #000; font-size: 18px; }
+.ab4 {width: 100%; height: 35%; margin: 0 auto; background-color: #f7f7f7; display: flex;  
+    flex-direction: column; align-items: center; justify-content: space-evenly; }
+
+    #contents {width:100%; height:550px; padding:20px; box-sizing:border-box; 
+    margin:0 auto; display:flex; flex-wrap:wrap; justify-content:center; }
+
+#contents h3 {text-align:center; width:100%; }
+
+#contents p {text-align:center; width:100%; }
+
+
+
+.box {box-shadow:4px 4px 4px #eee; width:15%; height:85%; border:1px solid #ddd;
+     padding:10px; margin:1%;}
+
+.box img {max-width:100%; height: 50%;}
+
+.box img:hover {opacity:0.8;}
+
+.box span {color:tomato;}
+
+.box h5 {font-size:15px; text-align:center;}
+
+.box p {color:#666; font-size:14px; }
+
+.red {background-color:tomato; padding:1px; font-size:9px; color:#fff; border:0; width:30px; text-align:center; margin:0 auto; }
+
+
+
+
+
+
+
+
+
+
+#go {width: 1200px; height: 550px; margin: 0 auto; background-color: turquoise;}
+.g1 {width: 50%; height: 100%; float: left; background-image: url('img/202.jpg');
+      background-position: center; background-size: cover;}
 .g2 {width: 50%; height: 100%; float: right; background-color: darkcyan; display: flex;
     flex-direction: row; flex-wrap: wrap;}
 .x1 {width: 50%; height: 50%; background-color: antiquewhite; display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
-.x2 {width: 50%; height: 50%; background-color: red;}
-.x3 {width: 50%; height: 50%; background-color: green;}
+.x2 {width: 50%; height: 50%; background-image: url('img/203.jpg'); background-position: center; background-size: cover;}
+.x3 {width: 50%; height: 50%; background-image: url('img/204.jpg'); background-position: center; background-size: cover;}
 .x4 {width: 50%; height: 50%; background-color: yellow; display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
 
 
-    #ra {width: 1200px; height: 250px; margin: 0 auto; background-color: #528bc2;}
-    .st1 {width: 50%; height: 100%; float: left; background-color: aqua; }
-    .re1 {width: 50%; height: 100%; float: left; background-color: blueviolet; display: flex;
+    #ra {width: 1200px; height: 250px; margin: 0 auto; background-color: #528bc2;
+        transform: translateX(300px); transition: all 2s; opacity: 0;}
+    .st1 {width: 50%; height: 100%; float: left; background-color: aqua;}
+    .re1 {width: 50%; height: 100%; float: left;  background-image: url('img/206.jpg'); background-position: center; background-size: cover; }
+    .re2 {width: 50%; height: 100%; float: right; background-color: cadetblue; display: flex;
         flex-direction: column; align-items: center; justify-content: space-evenly;}
-    .re2 {width: 50%; height: 100%; float: right; background-color: cadetblue;}
-    .st2 {width: 50%; height: 100%; float: left; background-color: aqua; }
+    .st2 {width: 50%; height: 100%; float: left; background-image: url('img/220.png'); background-position: center; background-size: cover; }
 
-
+    
 
 
 
@@ -131,13 +279,73 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 #lb ul:nth-of-type(2) li a {width: 100%; height: 100%; margin: 0 auto; }
 #lb ul:nth-of-type(2) li a img {width: 100%; height: 80%; margin: 0 auto; }
 
-
+ 
 
     </style>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/index_js.js"></script>
     <script>
+
+$(function(){
+
+// 왼쪽에서
+
+$('#a1').css("transform","translateX(0px)").css("opacity","1");
+
+
+
+$(window).scroll(function(){
+
+  var ws=$(this).scrollTop();
+
+  // 오른쪽에서
+
+  if(ws>1100){
+
+    $('#ra').css("transform","translateX(0px)").css("opacity","1");
+
+  }
+
+  // 아래에서
+
+  if(ws>300){
+
+    $('.chase').css("transform","translateY(0px)").css("opacity","1");
+
+  }
+
+  // 위에서
+
+  if(ws>2200){
+
+    $('.s4').css("transform","translateY(0px)").css("opacity","1");
+
+  }
+
+  // 왼쪽위에서
+
+  if(ws>3000){
+
+    $('.s5').css("transform","translate(0px,0px)").css("opacity","1");
+
+  }
+
+  // 오른쪽위에서
+
+  if(ws>3900){
+
+    $('.s6').css("transform","translate(0px,0px)").css("opacity","1");
+
+  }
+
+});
+
+});
+
+
+
+
 
 
 
@@ -216,7 +424,7 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
          <div class="sl">
             <p>test</p>
             <p>test</p>
-            <button></button>
+            <button>test</button>
          </div>
     </div>
 
@@ -227,6 +435,480 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
             <p>test</p>
         </div>
     </div>
+
+    <div id="cha">
+        <div class="chase">
+        <div class="container">
+            <div class="row">
+              <div class="column left">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+              </div>
+              <div class="column middle">
+                <input type="text" value="http://www.Blue_Moon_STuDio.com">
+              </div>
+              <div class="column right">
+                <div style="float:right">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="content">
+              <h3><br>Browser Window</h3><br>
+              <hr>
+              <p><br>How to create a detailed browser window look with CSS.<br>
+                How to create a detailed browser window look with CSS.<br>
+                How to create a detailed browser window look with CSS.<br>
+                How to create a detailed browser window look with CSS.<br>
+                How to create a detailed browser window look with CSS.<br></p>
+            </div>
+          </div>
+    </div>
+    </div>
+
+<div id="ig">
+    <div class="igte">
+        <p>THE HYUNDAI SEOUL MUSEUM <br>
+            더 현대 서울 뮤지엄</p>
+       
+    </div>
+</div>
+
+<div id="ab">
+
+    <div class="ab1">
+        <p><span>----------------------------------------------------------------------------------------------------------------------------------------------/</span>
+            ABOUT <b>THE HYUNDAI SEOUL MUSEUM</b>
+            <span>/----------------------------------------------------------------------------------------------------------------------------------------------</span>
+        </p>
+        <p>더 현대 서울 뮤지엄을 소개합니다</p>
+    </div>
+
+    <div class="ab2">
+        <p></p>
+    </div>
+
+    <div class="ab3">
+        <canvas id="canvas"></canvas>
+        <p><br>How to create a detailed browser window look with CSS.<br>
+            How to create a detailed browser window look with CSS.<br>
+            How to create a detailed browser window look with CSS.<br>
+            How to create a detailed browser window look with CSS.<br><br>
+
+            How to create a detailed browser window look with CSS.<br>
+            How to create a detailed browser window look with CSS.<br>
+            How to create a detailed browser window look with CSS.</p>
+    </div>
+
+<script>
+    let canvas, ctx;
+let render, init;
+let blob;
+
+class Blob {
+  constructor() {
+    this.points = [];
+  }
+
+  init() {
+    for (let i = 0; i < this.numPoints; i++) {
+      let point = new Point(this.divisional * (i + 1), this);
+      // point.acceleration = -1 + Math.random() * 2;
+      this.push(point);
+    }
+  }
+
+  render() {
+    let canvas = this.canvas;
+    let ctx = this.ctx;
+    let position = this.position;
+    let pointsArray = this.points;
+    let radius = this.radius;
+    let points = this.numPoints;
+    let divisional = this.divisional;
+    let center = this.center;
+
+    var img = new Image();
+    img.src =
+      "https://images.pexels.com/photos/6621339/pexels-photo-6621339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+    img.onload = function () {
+      var size = canvas.width;
+      var tempCanvas = document.createElement("canvas"),
+        tCtx = tempCanvas.getContext("2d");
+
+      tempCanvas.width = size;
+      tempCanvas.height = size;
+      tCtx.drawImage(this, 0, 0, this.width, this.height, 0, 0, size, size);
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      pointsArray[0].solveWith(pointsArray[points - 1], pointsArray[1]);
+      let p0 = pointsArray[points - 1].position;
+      let p1 = pointsArray[0].position;
+      let _p2 = p1;
+      ctx.beginPath();
+      ctx.moveTo(center.x, center.y);
+      ctx.moveTo((p0.x + p1.x) / 2, (p0.y + p1.y) / 2);
+
+      for (let i = 1; i < points; i++) {
+        pointsArray[i].solveWith(
+          pointsArray[i - 1],
+          pointsArray[i + 1] || pointsArray[0]
+        );
+
+        let p2 = pointsArray[i].position;
+        var xc = (p1.x + p2.x) / 2;
+        var yc = (p1.y + p2.y) / 2;
+        ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
+        // ctx.lineTo(p2.x, p2.y);
+
+        ctx.fillStyle = "#000000";
+        // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
+
+        p1 = p2;
+      }
+
+      var xc = (p1.x + _p2.x) / 2;
+      var yc = (p1.y + _p2.y) / 2;
+      ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
+      // ctx.lineTo(_p2.x, _p2.y);
+
+      // ctx.closePath();
+      //ctx.fillStyle = this.color;
+      ctx.fillStyle = ctx.createPattern(tempCanvas, "repeat");
+      ctx.fill();
+      ctx.strokeStyle = "#000000";
+      // ctx.stroke();
+
+      /*
+    ctx.fillStyle = '#000000';
+    if(this.mousePos) {
+      let angle = Math.atan2(this.mousePos.y, this.mousePos.x) + Math.PI;
+      ctx.fillRect(center.x + Math.cos(angle) * this.radius, center.y + Math.sin(angle) * this.radius, 5, 5);
+    }
+*/
+    };
+    requestAnimationFrame(this.render.bind(this));
+  }
+
+  push(item) {
+    if (item instanceof Point) {
+      this.points.push(item);
+    }
+  }
+
+  set color(value) {
+    this._color = value;
+  }
+  get color() {
+    return this._color || "#000000";
+  }
+
+  set canvas(value) {
+    if (
+      value instanceof HTMLElement &&
+      value.tagName.toLowerCase() === "canvas"
+    ) {
+      this._canvas = canvas;
+      this.ctx = this._canvas.getContext("2d");
+    }
+  }
+  get canvas() {
+    return this._canvas;
+  }
+
+  set numPoints(value) {
+    if (value > 2) {
+      this._points = value;
+    }
+  }
+  get numPoints() {
+    return this._points || 32;
+  }
+
+  set radius(value) {
+    if (value > 0) {
+      this._radius = value;
+    }
+  }
+  get radius() {
+    return this._radius || window.innerHeight / 2;
+  }
+
+  set position(value) {
+    if (typeof value == "object" && value.x && value.y) {
+      this._position = value;
+    }
+  }
+  get position() {
+    return this._position || { x: 0.5, y: 0.5 };
+  }
+
+  get divisional() {
+    return (Math.PI * 2) / this.numPoints;
+  }
+
+  get center() {
+    return {
+      x: this.canvas.width * this.position.x,
+      y: this.canvas.height * this.position.y
+    };
+  }
+
+  set running(value) {
+    this._running = value === true;
+  }
+  get running() {
+    return this.running !== false;
+  }
+}
+
+class Point {
+  constructor(azimuth, parent) {
+    this.parent = parent;
+    this.azimuth = Math.PI - azimuth;
+    this._components = {
+      x: Math.cos(this.azimuth),
+      y: Math.sin(this.azimuth)
+    };
+
+    this.acceleration = -0.3 + Math.random() * 0.6;
+  }
+
+  solveWith(leftPoint, rightPoint) {
+    this.acceleration =
+      (-0.3 * this.radialEffect +
+        (leftPoint.radialEffect - this.radialEffect) +
+        (rightPoint.radialEffect - this.radialEffect)) *
+        this.elasticity -
+      this.speed * this.friction;
+  }
+
+  set acceleration(value) {
+    if (typeof value == "number") {
+      this._acceleration = value;
+      this.speed += this._acceleration * 2;
+    }
+  }
+  get acceleration() {
+    return this._acceleration || 0;
+  }
+
+  set speed(value) {
+    if (typeof value == "number") {
+      this._speed = value;
+      this.radialEffect += this._speed * 5;
+    }
+  }
+  get speed() {
+    return this._speed || 0;
+  }
+
+  set radialEffect(value) {
+    if (typeof value == "number") {
+      this._radialEffect = value;
+    }
+  }
+  get radialEffect() {
+    return this._radialEffect || 0;
+  }
+
+  get position() {
+    return {
+      x:
+        this.parent.center.x +
+        this.components.x * (this.parent.radius + this.radialEffect),
+      y:
+        this.parent.center.y +
+        this.components.y * (this.parent.radius + this.radialEffect)
+    };
+  }
+
+  get components() {
+    return this._components;
+  }
+
+  set elasticity(value) {
+    if (typeof value === "number") {
+      this._elasticity = value;
+    }
+  }
+  get elasticity() {
+    return this._elasticity || 0.001;
+  }
+  set friction(value) {
+    if (typeof value === "number") {
+      this._friction = value;
+    }
+  }
+  get friction() {
+    return this._friction || 0.0085;
+  }
+}
+
+blob = new Blob();
+
+init = function () {
+  canvas = document.createElement("canvas");
+  canvas.setAttribute("touch-action", "none");
+
+  document.body.appendChild(canvas);
+
+  let resize = function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  };
+  window.addEventListener("resize", resize);
+  resize();
+
+  let oldMousePoint = { x: 0, y: 0 };
+  let hover = false;
+  let mouseMove = function (e) {
+    let pos = blob.center;
+    let diff = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+    let dist = Math.sqrt(diff.x * diff.x + diff.y * diff.y);
+    let angle = null;
+
+    blob.mousePos = { x: pos.x - e.clientX, y: pos.y - e.clientY };
+
+    if (dist < blob.radius && hover === false) {
+      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+      angle = Math.atan2(vector.y, vector.x);
+      hover = true;
+      // blob.color = '#77FF00';
+    } else if (dist > blob.radius && hover === true) {
+      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+      angle = Math.atan2(vector.y, vector.x);
+      hover = false;
+      blob.color = null;
+    }
+
+    if (typeof angle == "number") {
+      let nearestPoint = null;
+      let distanceFromPoint = 100;
+
+      blob.points.forEach((point) => {
+        if (Math.abs(angle - point.azimuth) < distanceFromPoint) {
+          // console.log(point.azimuth, angle, distanceFromPoint);
+          nearestPoint = point;
+          distanceFromPoint = Math.abs(angle - point.azimuth);
+        }
+      });
+
+      if (nearestPoint) {
+        let strength = {
+          x: oldMousePoint.x - e.clientX,
+          y: oldMousePoint.y - e.clientY
+        };
+        strength =
+          Math.sqrt(strength.x * strength.x + strength.y * strength.y) * 10;
+        if (strength > 100) strength = 100;
+        nearestPoint.acceleration = (strength / 100) * (hover ? -1 : 1);
+      }
+    }
+
+    oldMousePoint.x = e.clientX;
+    oldMousePoint.y = e.clientY;
+  };
+  // window.addEventListener('mousemove', mouseMove);
+  window.addEventListener("pointermove", mouseMove);
+
+  blob.canvas = canvas;
+  blob.init();
+  blob.render();
+};
+
+init();
+</script>
+
+    <div class="ab4">
+        <div id="contents">
+
+       
+
+
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5>test <span>test</span></h5>
+
+                <p>test <br> test</p>
+
+                <div class="red">test</div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5>test <span>test</span></h5>
+
+                <p>test <br> test</p>
+
+                <div class="red">test</div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5>test <span>test</span></h5>
+
+                <p>test <br> test</p>
+
+                <div class="red">test</div>
+
+            </div>
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5>test <span>test</span></h5>
+
+                <p>test <br> test</p>
+
+                <div class="red">test</div>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5>test <span>test</span></h5>
+
+                <p>test <br> test</p>
+
+                <div class="red">test</div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
 
    <div id="go">
     <div class="g1"></div>
@@ -249,11 +931,13 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
    <div id="ra">
     <div class="st1">
         <div class="re1">
+           
+        </div>
+        <div class="re2">
             <p>test</p>
             <p>test</p>
             <button>test</button>
         </div>
-        <div class="re2"></div>
     </div>
     <div class="st2"></div>
    </div>
