@@ -16,14 +16,14 @@
             font-size: 16px;
         }
 
-        body , html {width: 100%; height: 100%;}
+        body , html {width: 100%; height: 100%; }
 
         a {
-            color: #fff;
+            color: #fff; text-decoration: none;
         }
+       
 
-
-
+ 
 
    
         header {width: 100%; height: 50px; background-color: #528bc2; }
@@ -44,22 +44,118 @@ header a:hover {background-color: #eee; color:#666;}
  background-position: center; background-size: cover; }
 .sl {width: 50%; height: 100%; float: left;  display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
-.sl p {font-size: 21px; color: #eee;}
+.sl p {font-size: 25px; color: #eee; text-align: center;}
+.sl p:nth-of-type(2) {font-size: 15px;}
 
+
+
+  .button12 {
+  cursor: pointer;
+  color: #f7f7f7;
+  width: 140px;
+  height: 50px;
+  padding:2px 50px;
+  line-height: 15px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-5%, -50%);
+  z-index: 0;
+  background:#818181;
+  margin-left:20px;
+  border-radius: 0px 15px 0px 15px;
+}
+.button12 span {
+  color: #fff;
+  
+  display: inline-block;
+  padding-left: 35px;
+  text-transform: uppercase;
+  font: bold 18px/66px Arial;
+  transform: scaleX(0.6);
+  letter-spacing: 3px;
+  transform-origin: center left;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+  border-radius: 0px 15px 0px 15px;
+}
+.button12 em {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  
+  width: 47%;
+  right: 23px;
+  top: 50%;
+  transform: scaleX(0.25);
+   -webkit-transform:scaleX(0.25);
+  transform-origin: center right;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.button12:before,
+.button12:after {
+  content: '';
+  background: #fff;
+  
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition:0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button12:before {
+  top: 0;
+  left: 0;
+  right: auto;
+  
+}
+.button12:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+  
+}
+.button12:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+  border-radius: 0px 15px 0px 0px;
+  
+}
+.button12:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+  border-radius: 0px 0px 0px 15px;
+  
+}
+.button12:hover span {
+  color: #000;
+ 
+}
+.button12:hover em {
+  background: #000;
+  transform: scaleX(.51);
+  transform: scaleX(.51);
+  border-radius: 0px 15px 0px 15px;
+}
+
+.button12:hover a {color: #000;}
 
 
 #a1 {width: 1200px; height: 300px; margin: 0 auto; background-color: #528bc2;
     transform: translateX(-500px); transition: all 3s; opacity: 0;}
 .b1 {width: 100%; height: 100%; margin: 0 auto; background-color: tomato; display: flex;
     flex-direction: column; align-items: center; justify-content: space-evenly;}
-.b1 p {font-size: 20px;}
+.b1 p {font-size: 20px; }
 
 #cha {width: 1200px; height: 370px; margin: 0 auto; background-color: #5AC05A;}
-.chase {width: 90%; height: 100%; margin: 0 auto; padding: 50px; transform: translateY(100px);
+.chase {width: 90%; height: 280px; margin: 0 auto; padding: 50px; transform: translateY(100px);
     transition: all 3s; opacity: 0;}
 
 /* The browser window */
-.container { 
+.container { height: 100%;
   border: 3px solid #f1f1f1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -141,7 +237,7 @@ input[type=text] {
  .igte p {text-align: center; color: #fff; font-size: 50px;}
 
 
-#ab {width: 1200px; height: 1000px; margin: 0 auto; background-color: #FDD800;}
+#ab {width: 1200px; height: 1000px; margin: 0 auto; background-color: #FDD800; }
 .ab1 {width: 100%; height: 20%; margin: 0 auto; background-color: #f7f7f7; display: flex;  
     flex-direction: column; align-items: center; justify-content: space-evenly; }
 .ab1 p {color: #000; font-size: 24px; text-align: center; }
@@ -150,16 +246,35 @@ input[type=text] {
     display: flex;   flex-direction: column; align-items: center; justify-content: space-evenly;
 background-image: url('img/302.png'); background-position: center; background-size: cover;}
     .ab2 p {color: #000; font-size: 24px; }
-.ab3 {width: 50%; height: 45%; margin: 0 auto; float: right;  display: flex;  
-    flex-direction: column; align-items: center; justify-content: space-evenly; background: #aea9a5; }
+.ab3 {width: 50%; height: 45%; margin: 0 auto; float: right; display: flex; flex-direction: column;
+    align-items: flex-start; justify-content: flex-start; background: #aea9a5;
+    position: relative; }
 
-  canvas {
-  position: absolute;
-  touch-action: none;
-  top: 0;
-  left: 0;
+  .ttt {margin-top: 20px; margin-left: 20px;}
+  .typing-txt{display: none; width: 100%; height: 100%; margin: 0 auto; }
+  
+.typing ul li{
+  display:block;
 }
-    .ab3 p {color: #000; font-size: 18px; }
+.typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
+
+
+  
+
+
+
+
 .ab4 {width: 100%; height: 35%; margin: 0 auto; background-color: #f7f7f7; display: flex;  
     flex-direction: column; align-items: center; justify-content: space-evenly; }
 
@@ -217,7 +332,99 @@ background-image: url('img/302.png'); background-position: center; background-si
         flex-direction: column; align-items: center; justify-content: space-evenly;}
     .st2 {width: 50%; height: 100%; float: left; background-image: url('img/220.png'); background-position: center; background-size: cover; }
 
-    
+    .button1 {
+  cursor: pointer;
+  color: #f7f7f7;
+  width: 140px;
+  height: 35px;
+  padding:2px 50px;
+  line-height: 15px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-5%, -50%);
+  z-index: 0;
+  background:#818181;
+  margin-left:20px;
+  border-radius: 0px 15px 0px 15px;
+}
+.button1 span {
+  color: #fff;
+  
+  display: inline-block;
+  padding-left: 35px;
+  text-transform: uppercase;
+  font: bold 18px/66px Arial;
+  transform: scaleX(0.6);
+  letter-spacing: 3px;
+  transform-origin: center left;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+  border-radius: 0px 15px 0px 15px;
+}
+.button1 em {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  
+  width: 47%;
+  right: 23px;
+  top: 50%;
+  transform: scaleX(0.25);
+   -webkit-transform:scaleX(0.25);
+  transform-origin: center right;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.button1:before,
+.button1:after {
+  content: '';
+  background: #fff;
+  
+  height: 60%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition:0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button1:before {
+  top: 0;
+  left: 0;
+  right: auto;
+  
+}
+.button1:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+  
+}
+.button1:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+  border-radius: 0px 15px 0px 0px;
+  
+}
+.button1:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+  border-radius: 0px 0px 0px 15px;
+  
+}
+.button1:hover span {
+  color: #000;
+ 
+}
+.button1:hover em {
+  background: #000;
+  transform: scaleX(.51);
+  transform: scaleX(.51);
+  border-radius: 0px 15px 0px 15px;
+}
+
+.button12:hover a {color: #000;}
 
 
 
@@ -301,7 +508,10 @@ $(window).scroll(function(){
 
   // 오른쪽에서
 
-  if(ws>1100){
+
+
+
+  if(ws>2500){
 
     $('#ra').css("transform","translateX(0px)").css("opacity","1");
 
@@ -422,17 +632,22 @@ $(window).scroll(function(){
 
     <div id="slider">
          <div class="sl">
-            <p>test</p>
-            <p>test</p>
-            <button>test</button>
+            <p>GRAPHIC ARTWORK</p>
+            <p>아트웍(Artwork)이란,<br>
+              크게 보면 예술적인 작업과 작품을 통틀어서 말하지만 <br>
+              디자인적인 측면에서 봤을 때는<br> 
+              디지털 드로잉(Digital Drawing)과<br> 
+              일러스트레이터(illustrator)를 특징으로 잡고 <br>
+              보통 '아트웍'이라고 부른다. </p>
+            <button class="button12"><a href="#">test</a></button>
          </div>
     </div>
 
     <div id="a1">
         <div class="b1">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <p>GRAPHIC ARTWORK</p>
+            <p> THE HYUNDAI SEOUL</p>
+            <p>2022.06.08.(수) ~ 2022.07.15.(금)</p>
         </div>
     </div>
 
@@ -460,15 +675,37 @@ $(window).scroll(function(){
             <div class="content">
               <h3><br>Browser Window</h3><br>
               <hr>
-              <p><br>How to create a detailed browser window look with CSS.<br>
-                How to create a detailed browser window look with CSS.<br>
-                How to create a detailed browser window look with CSS.<br>
-                How to create a detailed browser window look with CSS.<br>
-                How to create a detailed browser window look with CSS.<br></p>
+              <div class="typing-txt"> 
+                <ul>
+                  <li>타이핑될 첫번째 문장</li><br>
+                  <li>두번째 문장 </li>
+                  <li>마지막 문장</li><br>
+                  <li></li>
+                  <li>두번째 문장 </li>
+                  <li>마지막 문장</li>
+                  
+                  
+              </ul>
+              
+              </div> 
+              <div class="typing">
+                 <ul>
+                  <li></li><br>
+                  <li> </li>
+                  <li></li><br>
+                  <li></li>
+                  <li> </li>
+                  <li></li>
+                  
+                  
+                </ul>
+              </div> 
             </div>
           </div>
     </div>
     </div>
+
+    
 
 <div id="ig">
     <div class="igte">
@@ -493,336 +730,107 @@ $(window).scroll(function(){
     </div>
 
     <div class="ab3">
-        <canvas id="canvas"></canvas>
-        <p><br>How to create a detailed browser window look with CSS.<br>
-            How to create a detailed browser window look with CSS.<br>
-            How to create a detailed browser window look with CSS.<br>
-            How to create a detailed browser window look with CSS.<br><br>
-
-            How to create a detailed browser window look with CSS.<br>
-            How to create a detailed browser window look with CSS.<br>
-            How to create a detailed browser window look with CSS.</p>
+       <div class="ttt">
+      <div class="typing-txt"> 
+        <ul>
+          <li>타이핑될 첫번째 문장</li><br>
+          <li>두번째 문장 </li>
+          <li>마지막 문장</li><br>
+          <li></li>
+          <li>두번째 문장 </li>
+          <li>마지막 문장</li>
+          <li>타이핑될 첫번째 문장</li>
+          <li> </li><br>
+          <li>마지막 문장</li>
+      </ul>
+      
+      </div> 
+      <div class="typing">
+         <ul>
+          <li></li><br>
+          <li> </li>
+          <li></li><br>
+          <li></li>
+          <li> </li>
+          <li></li>
+          <li></li>
+          <li> </li><br>
+          <li></li>
+        </ul>
+      </div> 
+       </div>
+       
     </div>
 
-<script>
-    let canvas, ctx;
-let render, init;
-let blob;
+   <script>
+var typingBool = false; 
+var typingIdx=0; 
+var liIndex = 0;
+var liLength = $(".typing-txt>ul>li").length;
 
-class Blob {
-  constructor() {
-    this.points = [];
-  }
+// 타이핑될 텍스트를 가져온다 
+var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+//liIndex 인덱스로 구분해 한줄씩 가져옴
 
-  init() {
-    for (let i = 0; i < this.numPoints; i++) {
-      let point = new Point(this.divisional * (i + 1), this);
-      // point.acceleration = -1 + Math.random() * 2;
-      this.push(point);
-    }
-  }
+typingTxt=typingTxt.split(""); // 한글자씩 잘라 배열로만든다
 
-  render() {
-    let canvas = this.canvas;
-    let ctx = this.ctx;
-    let position = this.position;
-    let pointsArray = this.points;
-    let radius = this.radius;
-    let points = this.numPoints;
-    let divisional = this.divisional;
-    let center = this.center;
-
-    var img = new Image();
-    img.src =
-      "https://images.pexels.com/photos/6621339/pexels-photo-6621339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
-    img.onload = function () {
-      var size = canvas.width;
-      var tempCanvas = document.createElement("canvas"),
-        tCtx = tempCanvas.getContext("2d");
-
-      tempCanvas.width = size;
-      tempCanvas.height = size;
-      tCtx.drawImage(this, 0, 0, this.width, this.height, 0, 0, size, size);
-
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      pointsArray[0].solveWith(pointsArray[points - 1], pointsArray[1]);
-      let p0 = pointsArray[points - 1].position;
-      let p1 = pointsArray[0].position;
-      let _p2 = p1;
-      ctx.beginPath();
-      ctx.moveTo(center.x, center.y);
-      ctx.moveTo((p0.x + p1.x) / 2, (p0.y + p1.y) / 2);
-
-      for (let i = 1; i < points; i++) {
-        pointsArray[i].solveWith(
-          pointsArray[i - 1],
-          pointsArray[i + 1] || pointsArray[0]
-        );
-
-        let p2 = pointsArray[i].position;
-        var xc = (p1.x + p2.x) / 2;
-        var yc = (p1.y + p2.y) / 2;
-        ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
-        // ctx.lineTo(p2.x, p2.y);
-
-        ctx.fillStyle = "#000000";
-        // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
-
-        p1 = p2;
-      }
-
-      var xc = (p1.x + _p2.x) / 2;
-      var yc = (p1.y + _p2.y) / 2;
-      ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
-      // ctx.lineTo(_p2.x, _p2.y);
-
-      // ctx.closePath();
-      //ctx.fillStyle = this.color;
-      ctx.fillStyle = ctx.createPattern(tempCanvas, "repeat");
-      ctx.fill();
-      ctx.strokeStyle = "#000000";
-      // ctx.stroke();
-
-      /*
-    ctx.fillStyle = '#000000';
-    if(this.mousePos) {
-      let angle = Math.atan2(this.mousePos.y, this.mousePos.x) + Math.PI;
-      ctx.fillRect(center.x + Math.cos(angle) * this.radius, center.y + Math.sin(angle) * this.radius, 5, 5);
-    }
-*/
-    };
-    requestAnimationFrame(this.render.bind(this));
-  }
-
-  push(item) {
-    if (item instanceof Point) {
-      this.points.push(item);
-    }
-  }
-
-  set color(value) {
-    this._color = value;
-  }
-  get color() {
-    return this._color || "#000000";
-  }
-
-  set canvas(value) {
-    if (
-      value instanceof HTMLElement &&
-      value.tagName.toLowerCase() === "canvas"
-    ) {
-      this._canvas = canvas;
-      this.ctx = this._canvas.getContext("2d");
-    }
-  }
-  get canvas() {
-    return this._canvas;
-  }
-
-  set numPoints(value) {
-    if (value > 2) {
-      this._points = value;
-    }
-  }
-  get numPoints() {
-    return this._points || 32;
-  }
-
-  set radius(value) {
-    if (value > 0) {
-      this._radius = value;
-    }
-  }
-  get radius() {
-    return this._radius || window.innerHeight / 2;
-  }
-
-  set position(value) {
-    if (typeof value == "object" && value.x && value.y) {
-      this._position = value;
-    }
-  }
-  get position() {
-    return this._position || { x: 0.5, y: 0.5 };
-  }
-
-  get divisional() {
-    return (Math.PI * 2) / this.numPoints;
-  }
-
-  get center() {
-    return {
-      x: this.canvas.width * this.position.x,
-      y: this.canvas.height * this.position.y
-    };
-  }
-
-  set running(value) {
-    this._running = value === true;
-  }
-  get running() {
-    return this.running !== false;
-  }
-}
-
-class Point {
-  constructor(azimuth, parent) {
-    this.parent = parent;
-    this.azimuth = Math.PI - azimuth;
-    this._components = {
-      x: Math.cos(this.azimuth),
-      y: Math.sin(this.azimuth)
-    };
-
-    this.acceleration = -0.3 + Math.random() * 0.6;
-  }
-
-  solveWith(leftPoint, rightPoint) {
-    this.acceleration =
-      (-0.3 * this.radialEffect +
-        (leftPoint.radialEffect - this.radialEffect) +
-        (rightPoint.radialEffect - this.radialEffect)) *
-        this.elasticity -
-      this.speed * this.friction;
-  }
-
-  set acceleration(value) {
-    if (typeof value == "number") {
-      this._acceleration = value;
-      this.speed += this._acceleration * 2;
-    }
-  }
-  get acceleration() {
-    return this._acceleration || 0;
-  }
-
-  set speed(value) {
-    if (typeof value == "number") {
-      this._speed = value;
-      this.radialEffect += this._speed * 5;
-    }
-  }
-  get speed() {
-    return this._speed || 0;
-  }
-
-  set radialEffect(value) {
-    if (typeof value == "number") {
-      this._radialEffect = value;
-    }
-  }
-  get radialEffect() {
-    return this._radialEffect || 0;
-  }
-
-  get position() {
-    return {
-      x:
-        this.parent.center.x +
-        this.components.x * (this.parent.radius + this.radialEffect),
-      y:
-        this.parent.center.y +
-        this.components.y * (this.parent.radius + this.radialEffect)
-    };
-  }
-
-  get components() {
-    return this._components;
-  }
-
-  set elasticity(value) {
-    if (typeof value === "number") {
-      this._elasticity = value;
-    }
-  }
-  get elasticity() {
-    return this._elasticity || 0.001;
-  }
-  set friction(value) {
-    if (typeof value === "number") {
-      this._friction = value;
-    }
-  }
-  get friction() {
-    return this._friction || 0.0085;
-  }
-}
-
-blob = new Blob();
-
-init = function () {
-  canvas = document.createElement("canvas");
-  canvas.setAttribute("touch-action", "none");
-
-  document.body.appendChild(canvas);
-
-  let resize = function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  };
-  window.addEventListener("resize", resize);
-  resize();
-
-  let oldMousePoint = { x: 0, y: 0 };
-  let hover = false;
-  let mouseMove = function (e) {
-    let pos = blob.center;
-    let diff = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-    let dist = Math.sqrt(diff.x * diff.x + diff.y * diff.y);
-    let angle = null;
-
-    blob.mousePos = { x: pos.x - e.clientX, y: pos.y - e.clientY };
-
-    if (dist < blob.radius && hover === false) {
-      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-      angle = Math.atan2(vector.y, vector.x);
-      hover = true;
-      // blob.color = '#77FF00';
-    } else if (dist > blob.radius && hover === true) {
-      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-      angle = Math.atan2(vector.y, vector.x);
-      hover = false;
-      blob.color = null;
-    }
-
-    if (typeof angle == "number") {
-      let nearestPoint = null;
-      let distanceFromPoint = 100;
-
-      blob.points.forEach((point) => {
-        if (Math.abs(angle - point.azimuth) < distanceFromPoint) {
-          // console.log(point.azimuth, angle, distanceFromPoint);
-          nearestPoint = point;
-          distanceFromPoint = Math.abs(angle - point.azimuth);
+if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+    typingBool=true; 
+    var tyInt = setInterval(typing,100); // 반복동작 
+} 
+     
+function typing(){ 
+  $(".typing ul li").removeClass("on");
+   $(".typing ul li").eq(liIndex).addClass("on");
+  //현재 타이핑되는 문장에만 커서 애니메이션을 넣어준다.
+  
+  if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+     $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+     typingIdx++; 
+   } else{ //한문장이끝나면
+     if(liIndex<liLength-1){
+     //다음문장으로  가기위해 인덱스를 1증가
+       liIndex++; 
+     //다음문장을 타이핑하기위한 셋팅
+        typingIdx=0;
+        typingBool = false; 
+        typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+       
+     //다음문장 타이핑전 1초 쉰다
+         clearInterval(tyInt);
+          //타이핑종료
+     
+         setTimeout(function(){
+           //1초후에 다시 타이핑 반복 시작
+           tyInt = setInterval(typing,100);
+         },1000);
+        } else if(liIndex==liLength-1){
+          
+         //마지막 문장까지 써지면 반복종료
+           clearInterval(tyInt);
+          
+          //1초후
+          setTimeout(function(){
+            //사용했던 변수 초기화
+            typingBool = false; 
+          liIndex=0;
+          typingIdx=-0;
+            
+            //첫번째 문장으로 셋팅
+          typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+               //타이핑 결과 모두 지우기
+          $(".typing ul li").html("")
+            
+            //반복시작
+            tyInt = setInterval(typing,100);
+          }, 100);
+          
+          
         }
-      });
+    } 
+}   
+   </script>
 
-      if (nearestPoint) {
-        let strength = {
-          x: oldMousePoint.x - e.clientX,
-          y: oldMousePoint.y - e.clientY
-        };
-        strength =
-          Math.sqrt(strength.x * strength.x + strength.y * strength.y) * 10;
-        if (strength > 100) strength = 100;
-        nearestPoint.acceleration = (strength / 100) * (hover ? -1 : 1);
-      }
-    }
-
-    oldMousePoint.x = e.clientX;
-    oldMousePoint.y = e.clientY;
-  };
-  // window.addEventListener('mousemove', mouseMove);
-  window.addEventListener("pointermove", mouseMove);
-
-  blob.canvas = canvas;
-  blob.init();
-  blob.render();
-};
-
-init();
-</script>
 
     <div class="ab4">
         <div id="contents">
@@ -835,25 +843,11 @@ init();
 
                 <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
 
-                <h5>test <span>test</span></h5>
+                <h5><br>test<br></h5>
+                <br><hr>
+                <p><br>test <br></p>
 
-                <p>test <br> test</p>
-
-                <div class="red">test</div>
-
-            </div>
-
-
-
-            <div class="box">
-
-                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
-
-                <h5>test <span>test</span></h5>
-
-                <p>test <br> test</p>
-
-                <div class="red">test</div>
+                <!-- <div class="red">test</div> -->
 
             </div>
 
@@ -863,26 +857,13 @@ init();
 
                 <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
 
-                <h5>test <span>test</span></h5>
+                <h5><br>test<br></h5>
+                <br><hr>
+                <p><br>test <br></p>
 
-                <p>test <br> test</p>
-
-                <div class="red">test</div>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
-
-                <h5>test <span>test</span></h5>
-
-                <p>test <br> test</p>
-
-                <div class="red">test</div>
+                <!-- <div class="red">test</div> -->
 
             </div>
-
 
 
 
@@ -890,11 +871,38 @@ init();
 
                 <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
 
-                <h5>test <span>test</span></h5>
+                <h5><br>test<br></h5>
+                <br><hr>
+                <p><br>test <br></p>
 
-                <p>test <br> test</p>
+                <!-- <div class="red">test</div> -->
 
-                <div class="red">test</div>
+            </div>
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+
+                <h5><br>test<br></h5>
+                <br><hr>
+                <p><br>test <br></p>
+
+                <!-- <div class="red">test</div> -->
+
+            </div>
+
+
+
+
+            <div class="box">
+
+                <a href="#"><img src="img/0.jpg" alt="Trulli"></a>
+         
+                <h5><br>test<br></h5>
+                <br><hr>
+                <p><br>test <br></p>
+
+                <!-- <div class="red">test</div> -->
 
             </div>
 
@@ -916,14 +924,14 @@ init();
         <div class="x1">
             <p>test</p>
             <p>test</p>
-            <button>test</button>
+            <button class="button1"><a href="#">test</a></button>
         </div>
         <div class="x2"></div>
         <div class="x3"></div>
         <div class="x4">
             <p>test</p>
             <p>test</p>
-            <button>test</button>
+            <button class="button1"><a href="#">test</a></button>
         </div>
     </div>
    </div>
@@ -936,7 +944,7 @@ init();
         <div class="re2">
             <p>test</p>
             <p>test</p>
-            <button>test</button>
+            <button class="button1"><a href="#">test</a></button>
         </div>
     </div>
     <div class="st2"></div>
