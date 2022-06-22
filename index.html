@@ -558,7 +558,7 @@ img {cursor: pointer; height: 5%; width: 5%; margin-right: 2%;}
     background-size: cover; background-position: center;}
     
 
-    #list {width: 100%; height: 50px;  margin: 0 auto; display: flex;
+    #list {width: 100%; height: 100px;  margin: 0 auto; display: flex;
         align-items: center; justify-content: center;}
     #list p {font-size: 4vw; margin-top: 20px; font-style: italic;
     font-family: 'LeferiPoint-WhiteObliqueA';}
@@ -572,9 +572,9 @@ img {cursor: pointer; height: 5%; width: 5%; margin-right: 2%;}
 
 
 
-#big {width: 100%; height: 250px; background-color: #000; margin: 0 auto;}
+#big {width: 100%; height: 750px; background-color: #000; margin: 0 auto;}
 
-.bole {width: 50%; height: 100%; background-color: yellowgreen; float: left;
+.bole {width: 100%; height: 50%; background-color: yellowgreen; float: left;
     background-image: url('img/8.jpg'); background-size: cover; background-position: center;
 display: flex; align-items: center;
     justify-content: center;}
@@ -589,7 +589,7 @@ display: flex; align-items: center;
 
 
 
-.bori {width: 50%; height: 100%; background-color: rebeccapurple; float: right; display: flex;
+.bori {width: 100%; height: 50%; background-color: rebeccapurple; float: right; display: flex;
     flex-direction: column; flex-wrap: wrap;}
 .bori img {width: 50%; height: 50%; display: flex; margin: 0 auto;}
 .bori img:hover {opacity: 0.5;}
@@ -606,18 +606,75 @@ background-size: cover; background-position: center;}
 .ck b {font-size: 5.5vw;}
 /* .ck p:nth-of-type(2) {font-size: 14px; font-weight: bold; font-style: italic; text-align: center;} */
 
-#icon {width: 100%; height: 100px;  margin: 0 auto; display: flex; background-color: antiquewhite;}
-#icon ul {width: 100%; height: 100%; display: flex; margin: 0 auto; margin-left: -5%;}
-#icon ul li {width: 15%; height: 100%;  margin: 0 auto; display: flex; align-items: center;}
-#icon ul li a {width: 100%; height: 85%; margin: 0 auto; display: flex; flex-direction: row;
+
+#icon {width: 100%; height: 120px;  margin: 0 auto; display: flex; background-color: antiquewhite;
+    flex-direction: row; align-items: center;
+    justify-content: center;}
+#icon ul {width: 100%; height: 80%; display: flex; margin: 0 auto;}
+#icon ul li {width: 15%; height: 100%;  margin: 0 auto; display: flex;}
+#icon ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center; }
+
+    .iconbox {width: 100%; height: 80%; display: flex; margin: 0 auto; flex-direction: row;
+        justify-content: space-around;
+    align-items: center;
+}
+    
+
+    .iconbox > .flip-card {
+  background-color: transparent;
+  width: 15%;
+  height: 85%;
+  perspective: 1000px;
+  margin: 0px 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+.flip-card-front img {width: 100%; height: 100%; border-radius: 50%;}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+    
+.flip-card-back img {width: 100%; height: 100%; border-radius: 50%;}
     
    
 
 .avatar { width: 90%;  height: 90%; vertical-align: middle; border-radius: 50%; display: flex;}
 .avatar:hover {transform: scale(1.1);}
 
-#bioox {width: 100%; height: 200px; margin: 0 auto; }
+#bioox {width: 100%; height: 280px; margin: 0 auto; }
 .boox {width: 100%; height: 100%; margin: 0 auto; background-color: teal;}
 
 .bxle {width: 100%; height: 50%; margin: 0 auto; float: left; background-color: #666; }
@@ -705,9 +762,9 @@ background-size: cover; background-position: center;}
 {width: 100%; height: 400px;}
 
 
-#conimg {width: 100%; height: 100px; margin: 0 auto; display: flex; flex-direction: row;
-    justify-content: flex-end; align-items: center;}
-#conimg > .coimbo {width: 23%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
+#conimg {width: 100%; height: 500px; margin: 0 auto; display: flex; flex-direction: row;
+    justify-content: flex-end; align-items: center; flex-wrap: wrap;}
+#conimg > .coimbo {width: 50%; height: 50%; margin: 0 auto; display: flex; flex-direction: row;
     justify-content: flex-end; align-items: center;}
 .coimbo:hover {opacity: 0.7;}
 .coimbo p {width: 100%; height: 100%; opacity: 0; font-size: 24px; text-align: center; display: flex; flex-direction: row;
@@ -837,107 +894,166 @@ background-size: cover; background-position: center;}
 
 #zd {width: 1200px; height: 500px; margin: 0 auto; background-color: yellow;
     font-family: 'LeferiPoint-WhiteObliqueA';}
-.d1 {width: 50%; height: 100%; float: left; margin: 0 auto; display: flex; flex-direction: row;
+.d1 {width: 100%; height: 55%; float: left; margin: 0 auto; display: flex; flex-direction: row;
     justify-content: center; align-items: center;}
-.d1 iframe {display: flex; width: 80%; height: 80%;}
-.d2 {width: 40%; height: 100%; float: left; display: flex; flex-direction: row;
-    justify-content: center; align-items: center;}
+.d1 iframe {display: flex; width: 90%; height: 90%;}
+.d2 {width: 100%; height: 40%; float: left; display: flex; flex-direction: row;
+    justify-content: center; align-items: center; flex-wrap: wrap;}
 .d2 p { display: flex;}
 
 .te {width: 100%; height: 100%; display: flex; flex-wrap: wrap; flex-direction: column;
-  justify-content: center; align-content: center; }
+    justify-content: space-around;
+    align-content: space-around; }
 .te P {font-size: 2vw; font-style: italic; font-family: 'LeferiPoint-WhiteObliqueA'; color: #fff;}
 
 
-#wo {width: 100%; height: 80px; margin: 0 auto; display: flex;
+#wo {width: 100%; height: 100px; margin: 0 auto; display: flex;
     flex-direction: row; justify-content: center; align-items: center;}
 #wo p { font-size: 24px; color: #000; display: flex; font-style: italic;
-    font-family: 'LeferiPoint-WhiteObliqueA';}
+    font-family: 'LeferiPoint-WhiteObliqueA'; margin-top: 5%;}
 
-#so {width: 100%; height: 250px; margin: 0 auto;  display: flex;}
+#so {width: 100%; height: 500px; margin: 0 auto;  display: flex; 
+    flex-direction: column;     justify-content: space-around;}
 
-.s1 {width: 31%; height: 100%; margin: 0 auto; background-color: steelblue;}
+.s1 {width: 100%; height: 33%; margin: 0 auto; background-color: steelblue; display: flex;}
 
-.o1 {width: 100%; height: 50%; margin: 0 auto;}
+.o1 {width: 100%; height: 100%; margin: 0 auto;}
 .o1 img {width: 100%; height: 100%;}
-.o2 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
-    justify-content: space-evenly;}
-.o2 p {text-align: center; font-size: 1vw; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
-.o3 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+
+.o2 {width: 30%; height: 100%; float: left; display: flex; flex-direction: column;
+    justify-content: space-around; }
+.o2 p {text-align: center; font-size: 3vw; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
+.o3 {width: 70%; height: 100%; float: right; display: flex; flex-direction: column;
     justify-content: center; font-style: italic;
     font-family: 'LeferiPoint-WhiteObliqueA';}
 .o3 a {color: #fff;}
 .o3 a:hover {margin-left: 5px; opacity: 0.7;}
-.o3 p {text-align: center; font-size: 1vw; font-style: italic; color: #fff;}
+.o3 p {text-align: center; font-size: 2.8vw; font-style: italic; color: #fff;}
 
-.s2 {width: 31%; height: 100%; margin: 0 auto; background-color: steelblue;}
+.s2 {width: 100%; height: 33%; margin: 0 auto; background-color: steelblue; display: flex;}
 
-.o4 {width: 100%; height: 50%; margin: 0 auto;}
+.o4 {width: 100%; height: 100%; margin: 0 auto;}
 .o4 img {width: 100%; height: 100%;}
-.o5 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
-    justify-content: space-evenly; font-style: italic; font-family: 'LeferiPoint-WhiteObliqueA';}
-.o5 p {text-align: center; font-size: 1vw; font-style: italic; color: #fff;}
-.o6 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+.o5 {width: 30%; height: 100%; float: left; display: flex; flex-direction: column;
+    justify-content: space-around; font-style: italic; font-family: 'LeferiPoint-WhiteObliqueA';}
+.o5 p {text-align: center; font-size: 3vw; font-style: italic; color: #fff;}
+.o6 {width: 70%; height: 100%; float: right; display: flex; flex-direction: column;
     justify-content: center;}
     .o6 a {color: #fff;}
     .o6 a:hover {margin-left: 5px; opacity: 0.7;}
-.o6 p {text-align: center; font-size: 1vw; display: flex; flex-direction: column;
+.o6 p {text-align: center; font-size: 2.8vw; display: flex; flex-direction: column;
     justify-content: center; font-style: italic; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
 
-.s3 {width: 31%; height: 100%; margin: 0 auto; background-color: steelblue;}
+.s3 {width: 100%; height: 33%; margin: 0 auto; background-color: steelblue; display: flex;}
 
-.o7 {width: 100%; height: 50%; margin: 0 auto;}
+.o7 {width: 100%; height: 100%; margin: 0 auto;}
 .o7 img {width: 100%; height: 100%;}
-.o8 {width: 30%; height: 50%; float: left; display: flex; flex-direction: column;
+.o8 {width: 30%; height: 100%; float: left; display: flex; flex-direction: column;
     justify-content: space-evenly; font-style: italic;}
-.o8 p {text-align: center; font-size: 1vw; display: flex; flex-direction: column;
-    justify-content: space-evenly; font-style: italic; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
-.o9 {width: 70%; height: 50%; float: right; display: flex; flex-direction: column;
+.o8 p {text-align: center; font-size: 3vw; display: flex; flex-direction: column;
+    justify-content: space-around; font-style: italic; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
+.o9 {width: 70%; height: 100%; float: right; display: flex; flex-direction: column;
     justify-content: center;}
     .o9 a {color: #fff;}
     .o9 a:hover {margin-left: 5px; opacity: 0.7;}
-.o9 p {text-align: center; font-size: 1vw; display: flex; flex-direction: column;
+.o9 p {text-align: center; font-size: 2.8vw; display: flex; flex-direction: column;
     justify-content: center; font-style: italic; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
 
 
-#labox {width: 100%; height: 100px; margin: 0 auto; background-color: antiquewhite; display: flex;}
-#labox ul {width: 100%; height: 100%; margin: 0 auto; display: flex;}
+    #labox {width: 100%; height: 120px; margin: 0 auto; background-color: antiquewhite; 
+    display: flex; flex-direction: row; align-items: center;
+    justify-content: center;}
+#labox ul {width: 1200px; height: 100%; margin: 0 auto; display: flex;}
 #labox ul li {width: 15%; height: 100%;  display: flex; margin: auto;}
 #labox ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center;}
     #labox ul li a:hover {transform: scale(1.1);}
 #labox ul li img {width: 95%; height: 85%; margin: 0 auto;  vertical-align: middle;
-    border-radius: 50%; display: flex; margin-left: -18px;}
+    border-radius: 50%; display: flex; margin-left: -10px;}
+  
+    .llaabox {width: 100%; height: 65%; margin: 0 a; display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: space-around;}
+  
+    .llaabox > .flip-card {
+  background-color: transparent;
+  width: 15%;
+  height: 85%;
+  perspective: 1000px;
+  margin: 0px 10px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
 
    
 
 
 footer {width: 100%; height: auto; margin: 0 auto;  }
 
-#ft {width: 100%; height: auto; margin: 0 auto; background-color: rgb(46, 46, 46); display: flex;
-    flex-direction: row; flex-wrap: wrap;}
+#ft {width: 100%; height: auto; margin: 0 auto; background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
 
-.er1 {width: 50%; height: 50%; margin: 0 auto;  display: flex; flex-direction: column;
-    justify-content: flex-start; color: #eee;}
-.er1 p:nth-of-type(1) {font-size: 2vw; color: rgb(207, 207, 207);}
-.er1 p {font-size: 1.5vw; color: #818181;}
+.er1 {width: 100%; height: 50%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee; align-items: center;}
+.er1 p:nth-of-type(1) {font-size: 3vw; color: rgb(207, 207, 207);}
+.er1 p {font-size: 2.5vw; color: #818181;}
 
-.er2 {width: 50%; height: 50%; margin: 0 auto; display: flex; flex-direction: column;
-    justify-content: flex-start; color: #eee;}
-    .er2 p:nth-of-type(1) {font-size: 2vw; color: rgb(207, 207, 207);}
-.er2 p {font-size: 1.5vw; color: #818181;}
+.er2 {width: 100%; height: 50%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee; align-items: center;}
+    .er2 p:nth-of-type(1) {font-size: 3vw; color: rgb(207, 207, 207);}
+.er2 p {font-size: 2.5vw; color: #818181;}
 
-.er3 {width: 50%; height: 50%; margin: 0 auto; display: flex; flex-direction: column;
-    justify-content: flex-start; color: #eee;}
-    .er3 p:nth-of-type(1) {font-size: 2vw; color: rgb(207, 207, 207);}
-.er3 p {font-size: 1.5vw; color: #818181;}
+.er3 {width: 100%; height: 50%; margin: 0 auto; display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee; align-items: center;}
+    .er3 p:nth-of-type(1) {font-size: 3vw; color: rgb(207, 207, 207);}
+.er3 p {font-size: 2.5vw; color: #818181;}
 
-.er4 {width: 50%; height: 50%; margin: 0 auto;  display: flex; flex-direction: column;
-    justify-content: flex-start; color: #eee;}
-    .er4 p:nth-of-type(1) {font-size: 2vw; color: rgb(207, 207, 207);}
-.er4 p {font-size: 1.5vw; color: #818181;}
+.er4 {width: 100%; height: 50%; margin: 0 auto;  display: flex; flex-direction: column;
+    justify-content: flex-start; color: #eee; align-items: center;}
+    .er4 p:nth-of-type(1) {font-size: 3vw; color: rgb(207, 207, 207);}
+.er4 p {font-size: 2.5vw; color: #818181;}
 
-.er4 > form {margin-top: -60px;}
+.er4 > form {margin-top: -15%; margin-left: 20%; align-items: center;}
 
 
 
@@ -1271,11 +1387,67 @@ background-size: cover; background-position: center;}
 .ck b {font-size: 30px;}
 
 
-#icon {width: 100%; height: 150px;  margin: 0 auto; display: flex; background-color: antiquewhite;}
-#icon ul {width: 100%; height: 100%; display: flex; margin: 0 auto;}
-#icon ul li {width: 15%; height: 100%;  margin: 0 auto; display: flex; align-items: center;}
-#icon ul li a {width: 100%; height: 85%; margin: 0 auto; display: flex; flex-direction: row;
+#icon {width: 100%; height: 200px;  margin: 0 auto; display: flex; background-color: antiquewhite;
+    flex-direction: row; align-items: center;
+    justify-content: center;}
+#icon ul {width: 1200px; height: 100%; display: flex; margin: 0 auto;}
+#icon ul li {width: 15%; height: 100%;  margin: 0 auto; display: flex;}
+#icon ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center; }
+
+    .iconbox {width: 1200px; height: 100%; display: flex; margin: 0 auto; flex-direction: row;
+        justify-content: space-around;
+    align-items: center;
+}
+    
+
+    .iconbox > .flip-card {
+  background-color: transparent;
+  width: 15%;
+  height: 85%;
+  perspective: 1000px;
+  margin: 0px 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+.flip-card-front img {width: 100%; height: 100%; border-radius: 50%;}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+    
+.flip-card-back img {width: 100%; height: 100%; border-radius: 50%;}
     
    
 
@@ -1563,7 +1735,9 @@ background-size: cover; background-position: center;}
     justify-content: center; font-style: italic; color: #fff; font-family: 'LeferiPoint-WhiteObliqueA';}
 
 
-#labox {width: 100%; height: 200px; margin: 0 auto; background-color: antiquewhite; display: flex;}
+    #labox {width: 100%; height: 200px; margin: 0 auto; background-color: antiquewhite; 
+    display: flex; flex-direction: row; align-items: center;
+    justify-content: center;}
 #labox ul {width: 1200px; height: 100%; margin: 0 auto; display: flex;}
 #labox ul li {width: 15%; height: 100%;  display: flex; margin: auto;}
 #labox ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
@@ -1571,6 +1745,56 @@ background-size: cover; background-position: center;}
     #labox ul li a:hover {transform: scale(1.1);}
 #labox ul li img {width: 95%; height: 85%; margin: 0 auto;  vertical-align: middle;
     border-radius: 50%; display: flex; margin-left: -10px;}
+  
+    .llaabox {width: 1200px; height: 100%; margin: 0 a; display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: space-around;}
+  
+    .llaabox > .flip-card {
+  background-color: transparent;
+  width: 15%;
+  height: 85%;
+  perspective: 1000px;
+  margin: 0px 10px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
 
    
 
@@ -1726,11 +1950,15 @@ background-size: cover; background-position: center;}
 #icon ul li a {width: 100%; height: 100%; margin: 0 auto; display: flex; flex-direction: row;
     align-items: center; }
 
+    .iconbox {width: 1200px; height: 100%; display: flex; margin: 0 auto; flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
     
 
-    #icon > .flip-card {
+    .iconbox > .flip-card {
   background-color: transparent;
-  width: 9%;
+  width: 15%;
   height: 85%;
   perspective: 1000px;
   margin: 0px 10px;
@@ -1765,6 +1993,7 @@ background-size: cover; background-position: center;}
   color: black;
   border-radius: 50%;
 }
+.flip-card-front img {width: 100%; height: 100%; border-radius: 50%;}
 
 .flip-card-back {
   background-color: #2980b9;
@@ -1773,6 +2002,7 @@ background-size: cover; background-position: center;}
   border-radius: 50%;
 }
     
+.flip-card-back img {width: 100%; height: 100%; border-radius: 50%;}
    
 
 .avatar { width: 90%;  height: 90%; vertical-align: middle; border-radius: 50%; display: flex;}
@@ -2068,10 +2298,14 @@ background-size: cover; background-position: center;}
     #labox ul li a:hover {transform: scale(1.1);}
 #labox ul li img {width: 95%; height: 85%; margin: 0 auto;  vertical-align: middle;
     border-radius: 50%; display: flex; margin-left: -10px;}
+
+    .llaabox {width: 1200px; height: 100%; margin: 0 a; display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: center;}
   
-    #labox > .flip-card {
+    .llaabox > .flip-card {
   background-color: transparent;
-  width: 9%;
+  width: 15%;
   height: 85%;
   perspective: 1000px;
   margin: 0px 10px;
@@ -2119,6 +2353,8 @@ background-size: cover; background-position: center;}
 
 
 footer {width: 100%; height: auto; margin: 0 auto;  }
+
+.ftbg {width: 100%; height: 450px; margin: 0 auto; background-color: rgb(46, 46, 46);}
 
 #ft {width: 1200px; height: 450px; margin: 0 auto; background-color: rgb(46, 46, 46); display: flex;}
 
@@ -2301,13 +2537,14 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 </div>
 
 <div id="icon">
+    <div class="iconbox">
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/20.jpg" alt="Avatar" style="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+           <img src="img/20.jpg" alt="Avatar" style="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2315,10 +2552,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/21.jpg" alt="Avatar" style="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+           <img src="img/21.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2326,10 +2563,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/22.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/22.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2337,10 +2574,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/400.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/400.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2348,13 +2585,14 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/401.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/401.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
+    </div>
 </div>
 
 <div id="bioox">
@@ -2589,13 +2827,14 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 
 
 <div id="labox">
+    <div class="llaabox">
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/402.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/402.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2603,10 +2842,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/403.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/403.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2614,10 +2853,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/404.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/404.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2625,10 +2864,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/211.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/211.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2636,10 +2875,10 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/213.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/213.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
@@ -2647,14 +2886,14 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/214.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
           <div class="flip-card-back">
-           <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="img/214.jpg" alt="Avatar" sstyle="width:100%; height:100%; border-radius:50%;">
           </div>
         </div>
       </div>
-
+    </div>
 </div>
 
 
@@ -2662,6 +2901,7 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 
 <footer>
 
+      <div class="ftbg">
     <div id="ft">
         <div class="er1">
             <br>
@@ -2715,6 +2955,7 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 
         </div>
     </div>
+</div>
 
     <div id="lb">
 
