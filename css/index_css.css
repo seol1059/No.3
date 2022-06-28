@@ -98,7 +98,7 @@ img {cursor: pointer; height: 5%; width: 5%; margin-right: 2%;}
   align-items: center;}
 .banner_wraper { height: 180px; width: 100%; margin: 0 auto; position: absolute;
   overflow: hidden; display: flex; }
-.banner_wraper img { height: 180px; width: 250px; position: absolute; display: flex; }
+.banner_wraper img { height: 180px; width: 250px; position: absolute; display: flex; cursor: pointer;}
 
 
 
@@ -106,7 +106,7 @@ img {cursor: pointer; height: 5%; width: 5%; margin-right: 2%;}
 
 .bole {width: 100%; height: 50%; background-color: yellowgreen; float: left;
     background-image: url("../img/8.jpg"); background-size: cover; background-position: center;
-display: flex; align-items: center;
+display: flex; align-items: center; cursor: pointer;
     justify-content: center;}
     .bole p {width: 100%; height: 100%; opacity: 0; color: #000; font-style: italic;
     font-family: 'LeferiPoint-WhiteObliqueA';}
@@ -188,7 +188,7 @@ background-size: cover; background-position: center;}
   color: black;
   border-radius: 50%;
 }
-.flip-card-front img {width: 100%; height: 100%; border-radius: 50%;}
+.flip-card-front img {width: 100%; height: 100%; border-radius: 50%; cursor: pointer;}
 
 .flip-card-back {
   background-color: #2980b9;
@@ -197,7 +197,7 @@ background-size: cover; background-position: center;}
   border-radius: 50%;
 }
     
-.flip-card-back img {width: 100%; height: 100%; border-radius: 50%;}
+.flip-card-back img {width: 100%; height: 100%; border-radius: 50%; cursor: pointer;}
     
    
 
@@ -511,7 +511,7 @@ background-size: cover; background-position: center;}
   height: 85%;
   perspective: 1000px;
   margin: 0px 10px;
-
+  cursor: pointer;
 }
 
 .flip-card-inner {
@@ -529,7 +529,7 @@ background-size: cover; background-position: center;}
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back { 
   position: absolute;
   width: 100%;
   height: 100%;
@@ -664,7 +664,7 @@ header a:hover {background-color: #eee; color:#666;}
   align-items: center;}
 .banner_wraper { height: 250px; width: 100%; margin: 0 auto; position: absolute;
   overflow: hidden; display: flex; }
-.banner_wraper img { height: 250px; width: 410px; position: absolute; display: flex; }
+.banner_wraper img { height: 250px; width: 410px; position: absolute; display: flex; cursor: pointer; }
 
 
 
@@ -672,7 +672,7 @@ header a:hover {background-color: #eee; color:#666;}
 
 .bole {width: 50%; height: 100%; background-color: yellowgreen; float: left;
     background-image: url("../img/8.jpg"); background-size: cover; background-position: center;
-display: flex; align-items: center;
+display: flex; align-items: center; cursor: pointer;
     justify-content: center;}
     .bole p {width: 100%; height: 100%; opacity: 0; color: #000; font-style: italic;
     font-family: 'LeferiPoint-WhiteObliqueA';}
@@ -686,7 +686,7 @@ display: flex; align-items: center;
 
 
 .bori {width: 50%; height: 100%; background-color: rebeccapurple; float: right; display: flex;
-    flex-direction: row; flex-wrap: wrap;}
+    flex-direction: row; flex-wrap: wrap; }
 .bori img {width: 50%; height: 50%; display: flex;}
 .bori img:hover {opacity: 0.5;}
 
@@ -716,7 +716,7 @@ background-size: cover; background-position: center;}
 }
     
 
-    .iconbox > .flip-card {
+    .iconbox > .flip-card { cursor: pointer;
   background-color: transparent;
   width: 15%;
   height: 85%;
@@ -1065,7 +1065,7 @@ background-size: cover; background-position: center;}
     align-items: center;
     justify-content: space-around;}
   
-    .llaabox > .flip-card {
+    .llaabox > .flip-card { cursor: pointer;
   background-color: transparent;
   width: 15%;
   height: 85%;
@@ -1139,15 +1139,15 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 .er4 p {font-size: 14px; color: #818181;}
 
 #input1 {width: 100%; height: 30px; border-top: none; border-left: none; border-right: none; 
-    border-bottom: 3px solid black; }
+    border-bottom: 3px solid black; cursor: pointer; }
 #input2 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black;}
+     border-bottom: 3px solid black; cursor: pointer;}
 #input3 {width: 100%; height: 30px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black; }
+     border-bottom: 3px solid black; cursor: pointer;}
 #input4 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black;}
+     border-bottom: 3px solid black; cursor: pointer;}
 
-     #lb {width: 1200px; height: 200px; margin: 0 auto; }
+     #lb {width: 1200px; height: 200px; margin: 0 auto; cursor: pointer;}
 #lb p {width: 100%; height: 55%; margin: 0 auto; color: #000; font-family: 'WooridaumB';
     display: flex; flex-direction: row; justify-content: center; align-items: center;
     font-weight: bold; font-style: italic; font-size: 24px;}
@@ -1219,7 +1219,7 @@ header a:hover {background-color: #eee; color:#666;}
   align-items: center;}
 .banner_wraper { height: 300px; width: 100%; margin: 0 auto; position: absolute;
   overflow: hidden; display: flex; }
-.banner_wraper img { height: 300px; width: 500px; position: absolute; display: flex; }
+.banner_wraper img { height: 300px; width: 500px; position: absolute; display: flex; cursor: pointer;}
 
 
 
@@ -1227,7 +1227,7 @@ header a:hover {background-color: #eee; color:#666;}
 
 .bole {width: 50%; height: 100%; background-color: yellowgreen; float: left;
     background-image: url("../img/8.jpg"); background-size: cover; background-position: center;
-display: flex; align-items: center;
+display: flex; align-items: center; cursor: pointer;
     justify-content: center;}
     .bole p {width: 100%; height: 100%; opacity: 0; color: #000; font-style: italic;
     font-family: 'LeferiPoint-WhiteObliqueA';}
@@ -1271,7 +1271,7 @@ background-size: cover; background-position: center;}
 }
     
 
-    .iconbox > .flip-card {
+    .iconbox > .flip-card {cursor: pointer;
   background-color: transparent;
   width: 15%;
   height: 85%;
@@ -1618,7 +1618,7 @@ background-size: cover; background-position: center;}
     align-items: center;
     justify-content: center;}
   
-    .llaabox > .flip-card {
+    .llaabox > .flip-card { cursor: pointer;
   background-color: transparent;
   width: 15%;
   height: 85%;
@@ -1694,15 +1694,15 @@ footer {width: 100%; height: auto; margin: 0 auto;  }
 .er4 p {font-size: 14px; color: #818181;}
 
 #input1 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none; 
-    border-bottom: 3px solid black; }
+    border-bottom: 3px solid black; cursor: pointer;}
 #input2 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black;}
+     border-bottom: 3px solid black;cursor: pointer;}
 #input3 {width: 170px; height: 30px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black; }
+     border-bottom: 3px solid black;cursor: pointer; }
 #input4 {width: 50px; height: 35px; border-top: none; border-left: none; border-right: none;
-     border-bottom: 3px solid black;}
+     border-bottom: 3px solid black;cursor: pointer;}
 
-#lb {width: 1200px; height: 200px; margin: 0 auto; }
+#lb {width: 1200px; height: 200px; margin: 0 auto; cursor: pointer;}
 #lb p {width: 100%; height: 55%; margin: 0 auto; color: #000; font-family: 'WooridaumB';
     display: flex; flex-direction: row; justify-content: center; align-items: center;
     font-weight: bold; font-style: italic; font-size: 24px;}
