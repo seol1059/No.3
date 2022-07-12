@@ -575,7 +575,7 @@ header .small{width: 100%; display: flex; align-items: center; justify-content:s
 header a{padding: 15px; text-decoration: none;}
 header a:hover {background-color: #eee; color:#666;}
 
-.logo {width: 120px; line-height: 50px; background-color: #161616; color: #fff;
+.logo {width: 200px; line-height: 50px; background-color: #161616; color: #fff;
     text-align: center;
     font-weight: bold; font-style: italic; font-family: 'WooridaumB'; }
 #b {display: none;}
@@ -1069,7 +1069,7 @@ header .small{width: 100%; display: flex; align-items: center; justify-content:s
 header a{padding: 15px; text-decoration: none;}
 header a:hover {background-color: #eee; color:#666;}
 
-.logo {width: 120px; line-height: 50px; background-color: #161616; color: #fff;
+.logo {width: 200px; line-height: 50px; background-color: #161616; color: #fff;
     text-align: center;
     font-weight: bold; font-style: italic; font-family: 'WooridaumB'; }
 #b {display: none;}
